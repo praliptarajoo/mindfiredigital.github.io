@@ -1,5 +1,3 @@
-# Welcome to Mindfire Open Source
-
 At Mindfire, we are passionate about open-source technology and its power to drive innovation and collaboration. Welcome to our open-source projects hub, where we contribute to and collaborate with the global open-source community on exciting and impactful projects.
 
 ## Our Mission
