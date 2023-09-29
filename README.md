@@ -34,7 +34,7 @@ We're actively working on these initiatives, and they'll be available for contri
 
 Stay updated with our latest contributions and news. Follow us on social media, join our mailing list, and be part of our vibrant open-source community.
 
-Connect with us on social media and via email:
+Connect with us on social media:
 
 - [LinkedIn](https://www.linkedin.com/company/mindfire-solutions/)
 - [Twitter](https://twitter.com/mindfires)

@@ -404,7 +404,7 @@ a {
     background-color: transparent !important;
     font-weight: 600 !important;
     font-size: 18px !important;
-    border-bottom: 1px solid transparent !important; 
+    border-bottom: 2px solid transparent !important; 
     padding-bottom: 2px !important; 
     transition: border-color 0.3s !important;
 }
@@ -417,4 +417,7 @@ body {
     font-family: Nunito Sans !important;
 }
 
+ul li {
+    padding-bottom: 5px !important;
+}
 
