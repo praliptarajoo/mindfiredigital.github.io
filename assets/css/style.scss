@@ -3,8 +3,8 @@
 
 @import "{{ site.theme }}";
 
-// Headers
-$header-heading-color: #fff !default;
-$header-bg-color: #F00001 !default;
-$header-bg-color-secondary: #155799 !default;
+
+.page-header{
+    background-color: #F00001 !important;
+}
 
