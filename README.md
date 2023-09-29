@@ -1,8 +1,8 @@
 At Mindfire, we are passionate about open-source technology and its power to drive innovation and collaboration. Welcome to our open-source projects hub, where we contribute to and collaborate with the global open-source community on exciting and impactful projects.
 
 
-## About Mindfire Digital LLP
-Welcome to Mindfire Digital LLP, a leading provider of Software & IT services dedicated to enhancing business growth through the development and delivery of complex projects. With over two decades of experience, Mindfire has forged partnerships with global companies across diverse industries, consistently delivering stellar software products. Our highly skilled team of 650+ passionate technologists excels at connecting the dots between people, technology, products, and business, ensuring seamless innovation and success.
+## About Us
+Mindfire Digital LLP, a leading provider of Software & IT services dedicated to enhancing business growth through the development and delivery of complex projects. With over two decades of experience, Mindfire has forged partnerships with global companies across diverse industries, consistently delivering stellar software products. Our highly skilled team of 650+ passionate technologists excels at connecting the dots between people, technology, products, and business, ensuring seamless innovation and success.
 [Visit our official website](https://www.mindfiredigitalllp.com/)
 
 
