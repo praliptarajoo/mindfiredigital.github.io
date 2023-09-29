@@ -365,9 +365,21 @@
 
 .page-header{
     background-color: unset;
-    background-image: url("https://www.mindfiresolutions.com/home-assets/images/bg-home.webp") 0 0/cover no-repeat;
+    background: url("https://www.mindfiresolutions.com/home-assets/images/bg-home.webp") 0 0/cover no-repeat;
+
+    .project-name {
+        color: #F00001 !important;
+    }
+
+    .project-tagline {
+        letter-spacing: -0.72px !important;
+        font-weight: 700 !important;
+        color: #3a3d41 !important;
+    }
 }
 
 body {
     font-family: Nunito Sans !important;
 }
+
+
