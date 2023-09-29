@@ -369,12 +369,15 @@
 
     .project-name {
         color: #F00001 !important;
+        padding-bottom: 20px !important;
     }
 
     .project-tagline {
+        max-width: 1076px !important;
         letter-spacing: -0.72px !important;
         font-weight: 700 !important;
         color: #3a3d41 !important;
+        margin: 0 auto;
     }
 }
 
