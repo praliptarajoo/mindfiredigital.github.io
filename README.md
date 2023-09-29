@@ -12,7 +12,7 @@ Mindfire Solutions is a 22-year-old software development and IT services company
 - Sales Offices: US and UK
 - [Visit our website](http://www.mindfiresolutions.com)
 
-## Our Expertise
+## Our Expertise 
 
 We excel in various domains, including:
 
