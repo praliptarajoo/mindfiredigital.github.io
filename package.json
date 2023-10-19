@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start:build": "serve ./build"
+    "start:build": "serve ./docs"
   },
   "dependencies": {
     "clsx": "^2.0.0",
