@@ -18,16 +18,34 @@ const Footer = () => {
         <span>. All Right Reserved</span>
       </div>
       <div className="flex flex-col md:flex-row md:items-center md:gap-10">
+        <span>Code of Conduct</span>
         <span>Privacy Policy</span>
         <span>Cookie Policy</span>
         <span>Terms of Use</span>
       </div>
       <div className="h-[0.2px] bg-mf-light-grey w-full my-4 lg:hidden"></div>
       <div className="flex flex-wrap gap-4">
-        <Image src={facebook} height={24} width={24} alt="facebook_img" />
-        <Image src={instagram} height={24} width={24} alt="instagram_img" />
-        <Image src={twitter} height={24} width={24} alt="twitter_img" />
-        <Image src={linkedIn} height={24} width={24} alt="linkedIn_img" />
+        <Link
+          href="https://www.facebook.com/MindfireSolutions"
+          target="_blank"
+        >
+          <Image src={facebook} height={24} width={24} alt="facebook_img" />
+        </Link>
+        <Link
+          href="https://www.instagram.com/mindfiresolutions/"
+          target="_blank"
+        >
+          <Image src={instagram} height={24} width={24} alt="instagram_img" />
+        </Link>
+        <Link href="https://twitter.com/mindfires" target="_blank">
+          <Image src={twitter} height={24} width={24} alt="twitter_img" />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/company/mindfire-solutions/"
+          target="_blank"
+        >
+          <Image src={linkedIn} height={24} width={24} alt="linkedIn_img" />
+        </Link>
       </div>
     </footer>
   );

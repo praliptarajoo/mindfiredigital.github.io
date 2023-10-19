@@ -12,13 +12,13 @@ interface Props {
   }>;
 }
 
-export default function AboutSegmentSection({
+const AboutSegmentSection = ({
   title,
   description,
   data,
   className,
   children,
-}: Props) {
+}: Props) => {
   return (
     <section className={cn("mt-[6rem] max-w-7xl mx-auto px-6", className)}>
       <h3 className="tracking-wider text-3xl font-medium capitalize text-mindfire-text-black  text-center">
@@ -46,4 +46,6 @@ export default function AboutSegmentSection({
       {children ? <div>{children}</div> : null}
     </section>
   );
-}
+};
+
+export default AboutSegmentSection;

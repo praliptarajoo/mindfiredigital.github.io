@@ -1,4 +1,4 @@
-import  { navigations } from "@/constants";
+import { navigations } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import mindfireFossLogo from "../../../public/images/mindfire_foss_logo.png";
@@ -25,7 +25,10 @@ const Header = () => {
                 </li>
               ) : (
                 <li key={index}>
-                  <Link href={navigation.path} className="hover:text-mf-light-grey">
+                  <Link
+                    href={navigation.path}
+                    className="hover:text-mf-light-grey"
+                  >
                     {navigation.name}
                   </Link>
                 </li>
@@ -33,12 +36,13 @@ const Header = () => {
             )}
           </ul>
         </div>
-        <button
+        <Link
+          href="/join-us"
           type="button"
           className="text-white bg-mf-red font-medium text-base rounded-full px-5 py-2 text-center tracking-wide"
         >
           Join Us!
-        </button>
+        </Link>
       </div>
     </header>
   );
