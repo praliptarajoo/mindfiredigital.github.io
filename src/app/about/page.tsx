@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AboutSegmentSection from "./components/AboutSegmentSection";
 import { missonSectionData, whyOpenSourceSectionData } from "@/constants";
-import aboutUsPage from '../../../public/images/about-us.jpg'
+import aboutUs from "../../../public/images/about-us.webp";
 
 const About = () => {
   return (
@@ -14,31 +14,29 @@ const About = () => {
               Where Innovation Knows no Boundaries.
             </h1>
             <p className="mt-6 text-xl text-mf-light-grey tracking-wide">
-              <q>
-                We code, we collaborate, and together we create open-source
-                wonders.
-              </q>
+              We code, we collaborate, and together we create open-source
+              wonders.
             </p>
             <div className="flex flex-wrap items-start gap-6 mt-10">
               <Link
-                href="/"
+                href="/projects"
                 className="bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3"
               >
-                explore us
+                explore projects
               </Link>
               <Link
                 target="_blank"
-                href="https://www.mindfiredigitalllp.com/"
+                href="https://www.mindfiresolutions.com/contact-us/"
                 className="bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3"
               >
-                visit us
+                contact us
               </Link>
             </div>
           </div>
           <Image
-            src={aboutUsPage}
-            alt="About us"
-            className='max-lg:w-full object-contain'
+            src={aboutUs}
+            alt="women-standing-beside-corkboard"
+            className="max-lg:w-full object-contain"
             height="500"
             width="600"
             priority
@@ -65,8 +63,8 @@ const About = () => {
       >
         <div className="text-center">
           <Link
-            href="/"
-            className="bg-mf-red text-white rounded-full px-5 py-3"
+            href="/projects#all-projects"
+            className="bg-mf-red tracking-wider text-white rounded-full px-5 py-3"
           >
             Explore projects
           </Link>
