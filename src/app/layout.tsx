@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" className={`${roboto.className} !scroll-smooth`}>
       <body>
         <Header />
         {children}

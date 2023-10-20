@@ -21,7 +21,7 @@ const About = () => {
             </p>
             <div className="flex flex-wrap items-start gap-6 mt-10">
               <Link
-                href="/"
+                href="/projects"
                 className="bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3"
               >
                 explore us
@@ -65,8 +65,8 @@ const About = () => {
       >
         <div className="text-center">
           <Link
-            href="/"
-            className="bg-mf-red text-white rounded-full px-5 py-3"
+            href="/projects#all-projects"
+            className="bg-mf-red tracking-wider text-white rounded-full px-5 py-3"
           >
             Explore projects
           </Link>
