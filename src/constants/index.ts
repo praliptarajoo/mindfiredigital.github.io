@@ -135,10 +135,35 @@ const termsData: SectionData[] = [
       "These Terms constitute the entire agreement between you and the platform. Unenforceable portions do not affect the remainder. No transfer of rights or obligations is allowed without the platform's consent. These Terms do not create a partnership or agency relationship. No third-party beneficiary rights exist, and the platform's rights and obligations are freely assignable. All rights not explicitly granted are reserved by the platform.",
   },
 ];
+
+const joinUsGetStartSectionData: SectionData[] = [
+  {
+    title: "Create a GitHub account",
+    description:
+      "Projects are hosted on GitHub, requiring a GitHub account for contributions through issue submissions and pull requests.",
+  },
+  {
+    title: "Find a project",
+    description:
+      "From web and mobile to AI and machine learning, we have diverse projects. Please visit our Projects page to explore.",
+  },
+  {
+    title: "Read the docs",
+    description:
+      "GitHub repos include README with project info and optional website links. Some projects use Docusaurus for docs.",
+  },
+  {
+    title: "Submit your first pull request",
+    description:
+      "You're all set to begin contributing! Explore this GitHub guide to understand pull requests, a way to notify others about your repository changes.",
+  },
+];
+
 export {
   navigations,
   missonSectionData,
   whyOpenSourceSectionData,
   cookieData,
   termsData,
+  joinUsGetStartSectionData
 };

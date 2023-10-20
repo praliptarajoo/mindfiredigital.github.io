@@ -63,16 +63,16 @@ const privacyPolicyContentData = [
         or investigatory body requests. Or, we might also share information when
         we are investigating potential fraud.`,
   },
-  {
-    title: "GOOGLE ADSENSE",
-    description: `Some of the ads may be served by Google. Google’s use of the DART cookie
-        enables it to serve ads to Users based on their visit to our Site and
-        other sites on the Internet. DART uses “non personally identifiable
-        information” and does NOT track personal information about you, such as
-        your name, email address, physical address, etc. You may opt out of the
-        use of the DART cookie by visiting the Google ad and content network
-        privacy policy at http://www.google.com/privacy_ads.html`,
-  },
+//   {
+//     title: "GOOGLE ADSENSE",
+//     description: `Some of the ads may be served by Google. Google’s use of the DART cookie
+//         enables it to serve ads to Users based on their visit to our Site and
+//         other sites on the Internet. DART uses “non personally identifiable
+//         information” and does NOT track personal information about you, such as
+//         your name, email address, physical address, etc. You may opt out of the
+//         use of the DART cookie by visiting the Google ad and content network
+//         privacy policy at http://www.google.com/privacy_ads.html`,
+//   },
   {
     title: "CHANGES TO THIS PRIVACY POLICY",
     description: `Mindfire Digital GitHub has the discretion to update this privacy policy
