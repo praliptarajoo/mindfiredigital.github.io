@@ -14,24 +14,22 @@ const About = () => {
               Where Innovation Knows no Boundaries.
             </h1>
             <p className="mt-6 text-xl text-mf-light-grey tracking-wide">
-              <q>
-                We code, we collaborate, and together we create open-source
-                wonders.
-              </q>
+              We code, we collaborate, and together we create open-source
+              wonders.
             </p>
             <div className="flex flex-wrap items-start gap-6 mt-10">
               <Link
                 href="/projects"
                 className="bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3"
               >
-                explore us
+                explore projects
               </Link>
               <Link
                 target="_blank"
-                href="https://www.mindfiredigitalllp.com/"
+                href="https://www.mindfiresolutions.com/contact-us/"
                 className="bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3"
               >
-                visit us
+                contact us
               </Link>
             </div>
           </div>

@@ -8,7 +8,7 @@ import twitter from "../../../public/images/social-media/twitter.png";
 const Footer = () => {
   return (
     <footer className="flex flex-col-reverse lg:flex-row gap-4 lg:justify-between items-center px-6 py-5 text-sm">
-      <div>
+      <div className="tracking-wider">
         <span>@ 2023 </span>
         <Link href="https://www.mindfiredigitalllp.com/" target="_blank">
           <span className="text-mf-red hover:underline">
@@ -17,8 +17,8 @@ const Footer = () => {
         </Link>
         <span>. All Right Reserved</span>
       </div>
-      <div className="flex flex-col md:flex-row md:items-center md:gap-10">
-        <span>Code of Conduct</span>
+      <div className="flex flex-col md:flex-row md:items-center md:gap-10 tracking-wider">
+        {/* <span>Code of Conduct</span> */}
         <span>Privacy Policy</span>
         <span>Cookie Policy</span>
         <span>Terms of Use</span>
