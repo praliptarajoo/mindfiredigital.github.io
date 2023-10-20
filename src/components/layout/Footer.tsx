@@ -19,16 +19,19 @@ const Footer = () => {
       </div>
       <div className="flex flex-col md:flex-row md:items-center md:gap-10 tracking-wider">
         {/* <span>Code of Conduct</span> */}
-        <span>Privacy Policy</span>
-        <span>Cookie Policy</span>
-        <span>Terms of Use</span>
+        <Link href="/privacy-policy">
+          <span>Privacy Policy</span>
+        </Link>
+        <Link href="/">
+          <span>Cookie Policy</span>
+        </Link>
+        <Link href="/">
+          <span>Terms of Use</span>
+        </Link>
       </div>
       <div className="h-[0.2px] bg-mf-light-grey w-full my-4 lg:hidden"></div>
       <div className="flex flex-wrap gap-4">
-        <Link
-          href="https://www.facebook.com/MindfireSolutions"
-          target="_blank"
-        >
+        <Link href="https://www.facebook.com/MindfireSolutions" target="_blank">
           <Image src={facebook} height={24} width={24} alt="facebook_img" />
         </Link>
         <Link
