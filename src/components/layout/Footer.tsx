@@ -17,17 +17,10 @@ const Footer = () => {
         </Link>
         <span>. All Right Reserved</span>
       </div>
-      <div className="flex flex-col md:flex-row md:items-center md:gap-10 tracking-wider">
-        {/* <span>Code of Conduct</span> */}
-        <Link href="/privacy-policy">
-          <span>Privacy Policy</span>
-        </Link>
-        <Link href="/">
-          <span>Cookie Policy</span>
-        </Link>
-        <Link href="/">
-          <span>Terms of Use</span>
-        </Link>
+      <div className="flex flex-col md:flex-row md:items-center md:gap-10">
+        <Link href="/privacy-policy">Privacy Policy</Link>
+        <Link href="/cookie-policy">Cookie Policy</Link>
+        <span>Terms of Use</span>
       </div>
       <div className="h-[0.2px] bg-mf-light-grey w-full my-4 lg:hidden"></div>
       <div className="flex flex-wrap gap-4">
