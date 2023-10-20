@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row md:items-center md:gap-10">
         <span>Privacy Policy</span>
         <Link href="/cookie-policy">Cookie Policy</Link>
-        <span>Terms of Use</span>
+        <Link href="/terms-of-use">Terms of Use</Link>
       </div>
       <div className="h-[0.2px] bg-mf-light-grey w-full my-4 lg:hidden"></div>
       <div className="flex flex-wrap gap-4">
