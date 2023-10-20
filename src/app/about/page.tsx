@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AboutSegmentSection from "./components/AboutSegmentSection";
 import { missonSectionData, whyOpenSourceSectionData } from "@/constants";
-import aboutUsPage from '../../../public/images/about-us.jpg'
+import aboutUs from "../../../public/images/about-us.webp";
 
 const About = () => {
   return (
@@ -21,7 +21,7 @@ const About = () => {
             </p>
             <div className="flex flex-wrap items-start gap-6 mt-10">
               <Link
-                href="/"
+                href="/projects"
                 className="bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3"
               >
                 explore us
@@ -36,9 +36,9 @@ const About = () => {
             </div>
           </div>
           <Image
-            src={aboutUsPage}
-            alt="About us"
-            className='max-lg:w-full object-contain'
+            src={aboutUs}
+            alt="women-standing-beside-corkboard"
+            className="max-lg:w-full object-contain"
             height="500"
             width="600"
             priority
@@ -65,8 +65,8 @@ const About = () => {
       >
         <div className="text-center">
           <Link
-            href="/"
-            className="bg-mf-red text-white rounded-full px-5 py-3"
+            href="/projects#all-projects"
+            className="bg-mf-red tracking-wider text-white rounded-full px-5 py-3"
           >
             Explore projects
           </Link>

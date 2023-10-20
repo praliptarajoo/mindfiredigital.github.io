@@ -1,6 +1,7 @@
 import TypeAnimationWrapper from "@/components/shared/TypeAnimationWrapper";
 import Image from "next/image";
 import particleAnimation from "../../public/images/particle_animation.gif";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -21,12 +22,12 @@ export default function Home() {
           A community pushing boundaries through open-source projects, fostering
           an ecosystem of transparency, learning, and impactful technology.
         </div>
-        <button
-          type="button"
+        <Link
+          href='/projects'
           className="text-white bg-mf-red font-medium text-base rounded-full px-6 py-3 text-center tracking-wide"
         >
           Explore Projects
-        </button>
+        </Link>
       </div>
       <Image
         src={particleAnimation}
