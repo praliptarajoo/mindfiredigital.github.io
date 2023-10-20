@@ -18,7 +18,7 @@ export default function ProjectCard({
   documentationUrl,
 }: Props) {
   return (
-    <div className="border-2 p-8 transition-[box-shadow] shadow-none hover:shadow-xl">
+    <div className="border-2 p-8 transition-[box-shadow] shadow-none hover:shadow-xl bg-slate-50/70">
       <h3 className="font-bold text-lg tracking-widest text-mindfire-text-black capitalize ">
         {title}
       </h3>
