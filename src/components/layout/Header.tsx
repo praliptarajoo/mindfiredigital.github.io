@@ -1,4 +1,4 @@
-import  { navigations } from "@/constants";
+import { navigations } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import mindfireFossLogo from "../../../public/images/mindfire_foss_logo.png";
@@ -12,25 +12,25 @@ const Header = () => {
       <div className="flex flex-col gap-2 md:flex-row md:gap-20 items-center">
         <div>
           <ul className="flex gap-9">
-            {navigations.map((navigation, index) =>
-              navigation.target ? (
-                <li key={index}>
-                  <Link
-                    href={navigation.path}
-                    className="hover:text-mf-light-grey"
-                    target={navigation.target}
-                  >
-                    {navigation.name}
-                  </Link>
-                </li>
-              ) : (
-                <li key={index}>
-                  <Link href={navigation.path} className="hover:text-mf-light-grey">
-                    {navigation.name}
-                  </Link>
-                </li>
-              )
-            )}
+            {navigations.map((navigation, index) => (
+              <li key={index}>
+                <Link
+                  href={navigation.path}
+                  className="hover:text-mf-light-grey flex items-center gap-2"
+                  {...(navigation.target ? { target: navigation.target } : {})}
+                >
+                  <span>{navigation.name}</span>
+                  {navigation.icon && navigation.iconAlt ? (
+                    <Image
+                      src={navigation.icon}
+                      height={14}
+                      width={14}
+                      alt={navigation.iconAlt}
+                    />
+                  ) : null}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <button

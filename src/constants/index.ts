@@ -1,7 +1,11 @@
+import { StaticImageData } from "next/image";
+import redirectIcon from "../../public/images/social-media/maximize.png";
 interface Navigation {
   name: string;
   path: string;
   target?: string;
+  icon?: string | StaticImageData;
+  iconAlt?: string;
 }
 
 interface SectionData {
@@ -15,9 +19,15 @@ const navigations: Navigation[] = [
     path: "/about",
   },
   {
+    name: "Projects",
+    path: "/projects",
+  },
+  {
     name: "GitHub",
     path: "https://github.com/mindfiredigital",
     target: "_blank",
+    icon: redirectIcon,
+    iconAlt: "redirect_icon",
   },
 ];
 
