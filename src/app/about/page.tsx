@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AboutSegmentSection from "./components/AboutSegmentSection";
 import { missonSectionData, whyOpenSourceSectionData } from "@/constants";
-import aboutUsPage from '../../../public/images/about-us.jpg'
+import aboutUs from "../../../public/images/about-us.webp";
 
 const About = () => {
   return (
@@ -36,9 +36,9 @@ const About = () => {
             </div>
           </div>
           <Image
-            src={aboutUsPage}
-            alt="About us"
-            className='max-lg:w-full object-contain'
+            src={aboutUs}
+            alt="women-standing-beside-corkboard"
+            className="max-lg:w-full object-contain"
             height="500"
             width="600"
             priority
