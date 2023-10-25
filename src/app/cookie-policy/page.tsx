@@ -9,7 +9,7 @@ export default function CookiePolicyPage() {
         web browsers. They help in storing and receiving identifiers and other
         data on computers, smartphones, and other devices. In this policy, we
         collectively refer to all such technologies as &quot;cookies.&quot; We
-        utilize cookies to enhance your experience on our open-source websites,
+        utilize cookies to enhance your experience on our open source websites,
         including all associated content, documentation,
         information,collectively known as the &quot;Website.&quot;
       </p>

@@ -19,7 +19,7 @@ export default function Home() {
           {/* <span className="text-mf-red animate-typing">FOSS</span> */}
         </div>
         <div className="text-mf-light-grey text-lg leading-6 mt-4 mb-10">
-          A community pushing boundaries through open-source projects, fostering
+          A community pushing boundaries through open source projects, fostering
           an ecosystem of transparency, learning, and impactful technology.
         </div>
         <Link

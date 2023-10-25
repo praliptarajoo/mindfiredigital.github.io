@@ -14,7 +14,7 @@ const About = () => {
               Where Innovation Knows no Boundaries.
             </h1>
             <p className="mt-6 text-xl text-mf-light-grey tracking-wide">
-              We code, we collaborate, and together we create open-source
+              We code, we collaborate, and together we create open source
               wonders.
             </p>
             <div className="flex flex-wrap items-start gap-6 mt-10">
@@ -45,11 +45,11 @@ const About = () => {
       </section>
       <AboutSegmentSection
         title="our mission"
-        description="Our mission is to collaborate with the open-source community, ignite creativity, share knowledge, and develop solutions that drive positive global change."
+        description="Our mission is to collaborate with the open source community, ignite creativity, share knowledge, and develop solutions that drive positive global change."
         data={missonSectionData}
       />
       <AboutSegmentSection
-        title="why opensource ?"
+        title="why open source?"
         description="Open source fuels collaboration, transparency, and perpetual
           advancement, inspiring innovation and fostering a culture of shared
           knowledge and growth."
@@ -58,7 +58,7 @@ const About = () => {
       />
       <AboutSegmentSection
         title="Our Contributions"
-        description="Explore our growing list of open-source projects, ranging from software libraries and frameworks to tools and utilities. We are committed to actively contributing to these projects and maintaining a strong presence in the open-source ecosystem."
+        description="Explore our growing list of open source projects, ranging from software libraries and frameworks to tools and utilities. We are committed to actively contributing to these projects and maintaining a strong presence in the open source ecosystem."
         className="mb-24"
       >
         <div className="text-center">
