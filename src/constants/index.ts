@@ -87,7 +87,7 @@ const missonSectionData: SectionData[] = [
   {
     title: "positive global impact",
     description:
-      "Building open-source solutions that address real-world challenges and bring about positive change on a global scale",
+      "Building open source solutions that address real-world challenges and bring about positive change on a global scale",
   },
 ];
 
