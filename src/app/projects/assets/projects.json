@@ -15,12 +15,12 @@
     "title": "nft marketplace",
     "shortDescription": "A multi-chain platform for fans to connect with their favorite celebrities.",
     "githubUrl": "https://github.com/mindfiredigital/nft-marketplace",
-    "documentationUrl": "https://mindfiredigital.github.io/nft-marketplace"
+    "documentationUrl": "https://github.com/mindfiredigital/nft-marketplace"
   },
   {
     "title": "filemaker data API bundler",
     "shortDescription": "Seamless frontend integration with Filemaker Database.",
     "githubUrl": "https://github.com/mindfiredigital/fmdapi-node-weaver",
-    "documentationUrl": "https://mindfiredigital.github.io/fmdapi-node-weaver"
+    "documentationUrl": "https://github.com/mindfiredigital/fmdapi-node-weaver"
   }
 ]
