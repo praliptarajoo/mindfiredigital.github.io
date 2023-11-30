@@ -10,5 +10,17 @@
     "shortDescription": "A Canvas Editor project builds upon the canvas-editor-plugin.",
     "githubUrl": "https://github.com/mindfiredigital/canvas-editor",
     "documentationUrl": "https://mindfiredigital.github.io/canvas-editor"
+  },
+  {
+    "title": "nft marketplace",
+    "shortDescription": "A multi-chain platform for fans to connect with their favorite celebrities.",
+    "githubUrl": "https://github.com/mindfiredigital/nft-marketplace",
+    "documentationUrl": "https://mindfiredigital.github.io/nft-marketplace"
+  },
+  {
+    "title": "fmdapi node weaver",
+    "shortDescription": "A tool for developers to integrate multi page document editors.",
+    "githubUrl": "https://github.com/mindfiredigital/fmdapi-node-weaver",
+    "documentationUrl": "https://mindfiredigital.github.io/fmdapi-node-weaver"
   }
 ]
