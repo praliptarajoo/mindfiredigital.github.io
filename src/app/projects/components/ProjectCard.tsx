@@ -18,21 +18,27 @@ export default function ProjectCard({
   documentationUrl,
 }: Props) {
   return (
-    <div className="border-2 p-8 transition-[box-shadow] shadow-none hover:shadow-xl bg-slate-50/70">
-      <h3 className="font-bold text-lg tracking-widest text-mindfire-text-black capitalize ">
+    <div className='border-2 p-8 transition-[box-shadow] shadow-none hover:shadow-xl bg-slate-50/70'>
+      <h3 className='font-bold text-lg tracking-widest text-mindfire-text-black capitalize '>
         {title}
       </h3>
-      <p className="mt-3 text-mf-dark tracking-wide leading-10">
+      <p className='mt-3 text-mf-dark tracking-wide leading-10'>
         {shortDescription}
       </p>
-      <div className="flex gap-4 justify-end mt-6 pt-6 border-t-2">
-        <Link href={githubUrl!} target="_blank">
-          <Image src={github} height={20} width={20} alt="facebook_img" />
-        </Link>
-        <Link href={documentationUrl ?? ""} target="_blank">
-          <Image src={redirect} height={20} width={20} alt="facebook_img" />
-        </Link>
-      </div>
+      {(githubUrl || documentationUrl) && (
+        <div className='flex gap-4 justify-end mt-6 pt-6 border-t-2'>
+          {githubUrl && (
+            <Link href={githubUrl!} target='_blank'>
+              <Image src={github} height={20} width={20} alt='facebook_img' />
+            </Link>
+          )}
+          {documentationUrl && (
+            <Link href={documentationUrl ?? ""} target='_blank'>
+              <Image src={redirect} height={20} width={20} alt='facebook_img' />
+            </Link>
+          )}
+        </div>
+      )}
     </div>
   );
 }
