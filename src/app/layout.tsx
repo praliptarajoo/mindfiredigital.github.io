@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Meta from "@/components/meta/Meta";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -23,6 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${roboto.className} !scroll-smooth`}>
+      <Meta />
       <body>
         <Header />
         {children}
