@@ -2,7 +2,13 @@
   {
     "id": 1,
     "title": "FireKubeX",
-    "shortDescription": "Simplifies Kubernetes, easing app deployment for developers."
+    "shortDescription": "Simplifies Kubernetes, easing app deployment for developers.",
+    "Summary": "This script simplifies the deployment process for developers by abstracting the complexities of Kubernetes. By providing the necessary configuration in the config.yaml file, developers can quickly deploy their applications to a Kubernetes cluster with ease without the need for in-depth Kubernetes knowledge. It also supports starting and stopping services, along with options for development (dev) and production (prod) modes. The config.yaml is intended for individual microservices. It aims to enhance the efficiency of deploying and scaling microservices by providing a flexible and customizable solution.",
+    "project_type": "Developer Tools and Utilities",
+    "contributors": ["jagannathmfs", "amitshr6779"],
+    "project_goal": "The script is designed to handle multiple services, making it scalable for diverse microservices architectures. Additionally, it can be extended easily to incorporate additional features or adapt to evolving Kubernetes best practices.",
+    "target_users": "Targeted users will be the developers who needs to deploy their applications in a kubernetes cluster on their own local system or in any cloud kubernetes like (EKS,AKS,GKE).",
+    "risk": "Potential risks related to conflicting with proprietary IP or current customer work if any: None"
   },
   {
     "id": 2,
@@ -28,5 +34,21 @@
     "id": 6,
     "title": "EHRConnect",
     "shortDescription": "Seamlessly connect with any EHR"
+  },
+  {
+    "id": 7,
+    "title": "FileMaker PHP ORM",
+    "shortDescription": "Accelerate php development with ORM for seamless integration with FileMaker",
+    "description": "FileMaker Data API ORM on Core PHP will bridge the gap between FileMaker database with PHP to develop applications using various framework to create modern solutions. It resolves common issues associated with the default FileMaker Data API, making it easier and more efficient to work with FileMaker data for developers with FileMaker knowledge as well as developers with limited or no FileMaker knowledge. The library can be used with any PHP frameworks",
+    "project_goal": "FileMaker Data API ORM on Core PHP will bridge the gap between FileMaker database with PHP to develop applications using various framework to create modern solutions.",
+    "repo_name": "filemaker-php-orm",
+    "project_type": "library",
+    "contributors": ["Mukesh Gupta", "Pooja Patle"],
+    "contributors_git_profile": [
+      "https://github.com/mukeshg1",
+      "https://github.com/Pkp-tech"
+    ],
+    "target_users": "It resolves common issues associated with the default FileMaker Data API, making it easier and more efficient to work with FileMaker data for developers with FileMaker knowledge as well as developers with limited or no FileMaker knowledge.",
+    "risk": "Potential risks related to conflicting with proprietary IP or current customer work If any: None "
   }
 ]

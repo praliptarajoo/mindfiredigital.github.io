@@ -12,21 +12,20 @@
     "documentationUrl": "https://mindfiredigital.github.io/canvas-editor"
   },
   {
-    "title": "nft marketplace",
+    "title": "NFT marketplace",
     "shortDescription": "A multi-chain platform for fans to connect with their favorite celebrities.",
     "githubUrl": "https://github.com/mindfiredigital/nft-marketplace",
     "documentationUrl": "https://github.com/mindfiredigital/nft-marketplace"
   },
   {
-    "title": "filemaker data API bundler",
+    "title": "MDAPI Node Weaver",
     "shortDescription": "Seamless frontend integration with Filemaker Database.",
     "githubUrl": "https://github.com/mindfiredigital/fmdapi-node-weaver",
     "documentationUrl": "https://github.com/mindfiredigital/fmdapi-node-weaver"
   },
   {
-    "title": "Extension Methods",
-    "shortDescription": "C# utility library with 300+ NuGet extension methods.",
-    "githubUrl": "https://github.com/mindfiredigital/extension-methods",
-    "documentationUrl": "https://github.com/mindfiredigital/extension-methods"
+    "title": " Extension Methods",
+    "shortDescription": "C# Utility Library with 300+ NuGet extension methods",
+    "githubUrl": "https://github.com/ssswagatss/extension-methods"
   }
 ]
