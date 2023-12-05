@@ -1,22 +1,32 @@
 [
   {
     "id": 1,
-    "title": "Upcoming Projects Example",
-    "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque"
+    "title": "FireKubeX",
+    "shortDescription": "Simplifies Kubernetes, easing app deployment for developers."
   },
   {
     "id": 2,
-    "title": "Upcoming Projects Example",
-    "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque"
+    "title": "SSR Guide",
+    "shortDescription": "The ultimate guide for SSR implementation"
   },
   {
     "id": 3,
-    "title": "Upcoming Projects Example",
-    "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque"
+    "title": "IframeVsWebComponent",
+    "shortDescription": "Benchmarking performance with iframes and web components"
   },
   {
-    "id": 3,
-    "title": "Upcoming Projects Example",
-    "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque"
+    "id": 4,
+    "title": "FMDAPI Python Weaver",
+    "shortDescription": "Seamless frontend integration with Filemaker Database"
+  },
+  {
+    "id": 5,
+    "title": "Angular Canvas Editor",
+    "shortDescription": "Multipage document editing in Angular with Canvas"
+  },
+  {
+    "id": 6,
+    "title": "EHRConnect",
+    "shortDescription": "Seamlessly connect with any EHR"
   }
 ]
