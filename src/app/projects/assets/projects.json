@@ -24,8 +24,9 @@
     "documentationUrl": "https://github.com/mindfiredigital/fmdapi-node-weaver"
   },
   {
-    "title": " Extension Methods",
-    "shortDescription": "C# Utility Library with 300+ NuGet extension methods",
-    "githubUrl": "https://github.com/ssswagatss/extension-methods"
+    "title": "Extension Methods",
+    "shortDescription": "C# utility library with 300+ NuGet extension methods.",
+    "githubUrl": "https://github.com/mindfiredigital/extension-methods",
+    "documentationUrl": "https://github.com/mindfiredigital/extension-methods"
   }
 ]
