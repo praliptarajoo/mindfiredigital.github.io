@@ -35,7 +35,7 @@ export default function ProjectsPage() {
           />
         </div>
       </section>
-      <ProjectGrid title='all Projects' projectData={projectData} />
+      <ProjectGrid title='Current Projects' projectData={projectData} />
       <div className='mb-20'>
         <ProjectGrid
           title='Upcoming Projects'
