@@ -7,7 +7,7 @@
   },
   {
     "title": "canvas editor",
-    "shortDescription": "A Canvas Editor project builds upon the canvas-editor-plugin.",
+    "shortDescription": "Multipage document editor based on HTML5 canvas.",
     "githubUrl": "https://github.com/mindfiredigital/canvas-editor",
     "documentationUrl": "https://mindfiredigital.github.io/canvas-editor"
   },
