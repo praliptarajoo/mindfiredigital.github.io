@@ -34,21 +34,5 @@
     "id": 6,
     "title": "EHRConnect",
     "shortDescription": "Seamlessly connect with any EHR"
-  },
-  {
-    "id": 7,
-    "title": "FileMaker PHP ORM",
-    "shortDescription": "Accelerate php development with ORM for seamless integration with FileMaker",
-    "description": "FileMaker Data API ORM on Core PHP will bridge the gap between FileMaker database with PHP to develop applications using various framework to create modern solutions. It resolves common issues associated with the default FileMaker Data API, making it easier and more efficient to work with FileMaker data for developers with FileMaker knowledge as well as developers with limited or no FileMaker knowledge. The library can be used with any PHP frameworks",
-    "project_goal": "FileMaker Data API ORM on Core PHP will bridge the gap between FileMaker database with PHP to develop applications using various framework to create modern solutions.",
-    "repo_name": "filemaker-php-orm",
-    "project_type": "library",
-    "contributors": ["Mukesh Gupta", "Pooja Patle"],
-    "contributors_git_profile": [
-      "https://github.com/mukeshg1",
-      "https://github.com/Pkp-tech"
-    ],
-    "target_users": "It resolves common issues associated with the default FileMaker Data API, making it easier and more efficient to work with FileMaker data for developers with FileMaker knowledge as well as developers with limited or no FileMaker knowledge.",
-    "risk": "Potential risks related to conflicting with proprietary IP or current customer work If any: None "
   }
 ]
