@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "FireKubeX",
+    "shortDescription": "Simplifies Kubernetes, easing app deployment for developers."
+  },
+  {
+    "id": 2,
+    "title": "SSR Guide",
+    "shortDescription": "The ultimate guide for SSR implementation"
+  },
+  {
+    "id": 3,
+    "title": "IframeVsWebComponent",
+    "shortDescription": "Benchmarking performance with iframes and web components"
+  },
+  {
+    "id": 4,
+    "title": "FMDAPI Python Weaver",
+    "shortDescription": "Seamless frontend integration with Filemaker Database"
+  },
+  {
+    "id": 5,
+    "title": "Angular Canvas Editor",
+    "shortDescription": "Multipage document editing in Angular with Canvas"
+  },
+  {
+    "id": 6,
+    "title": "EHRConnect",
+    "shortDescription": "Seamlessly connect with any EHR"
+  }
+]
