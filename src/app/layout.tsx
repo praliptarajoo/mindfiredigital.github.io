@@ -3,7 +3,6 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import Meta from "@/components/meta/Meta";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -12,9 +11,60 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mindfiredigital.github.io/"),
   title: "Mindfire | FOSS",
   description:
     "Official GitHub Page for Mindfire Digital LLP. Explore our projects, contributions, and insights in technology, software development, and more. Join us in our journey to push the boundaries of innovation.",
+  applicationName: 'Mindfire FOSS',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['Mindfire', 'FOSS', 'Mindfire FOSS', "React", "JavaScript", "next.js", "Opensource community", "Software Development"],
+  authors: [{ name: 'Mindfire' }, { name: 'Mindfire', url: 'https://mindfiredigital.github.io' }],
+  creator: 'Mindfire LLP ',
+  publisher: 'Mindfire LLP',
+  
+  openGraph: {
+    title: "Mindfire | Open Source Collaboration",
+    description:
+      "Mindfire FOSS | Collaborative creativity, knowledge sharing, and positive global impact. Igniting innovation through open source collaboration with Mindfire.",
+    images: {
+      url: "https://mindfiredigital.github.io/_next/static/media/mindfire_foss_logo.0c507a60.png",
+      height: "219",
+      width: "500",
+    },
+    url: "https://mindfiredigital.github.io/",
+    type: "website",
+    siteName: "Mindfire",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "app",
+    title: "Mindfire | Open Source Collaboration",
+    description:
+      "Collaborative creativity, knowledge sharing, and positive global impact. Igniting innovation through open source collaboration with Mindfire.",
+    site: "@mindfires",
+    creator: "@mindfires",
+    app: {
+      name: "twitter_app",
+      id: {
+        iphone: "twitter_app://iphone",
+        ipad: "twitter_app://ipad",
+        googleplay: "twitter_app://googleplay",
+      },
+    },
+  },
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -24,7 +74,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${roboto.className} !scroll-smooth`}>
-      <Meta />
       <body>
         <Header />
         {children}
