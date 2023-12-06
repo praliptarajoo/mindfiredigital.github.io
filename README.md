@@ -1,4 +1,5 @@
 At Mindfire, we are passionate about open-source technology and its power to drive innovation and collaboration. Welcome to our open-source projects hub, where we contribute to and collaborate with the global open-source community on exciting and impactful projects.
+[Visit our official github page](https://github.com/mindfiredigital/mindfiredigital.github.io)
 
 ## About Us
 
@@ -16,6 +17,7 @@ Open source embodies the spirit of collaboration, transparency, and continuous i
 ## Our Contributions
 
 Explore our growing list of open-source projects, ranging from software libraries and frameworks to tools and utilities. We are committed to actively contributing to these projects and maintaining a strong presence in the open-source ecosystem.
+(https://github.com/mindfiredigital/mindfiredigital.github.io/blob/dev/CONTRIBUTING.md)
 
 ## Get Involved
 
@@ -81,3 +83,12 @@ pnpm start:build
 # or
 bun start:build
 ```
+
+## List of Contributors
+
+- [lakinmindfire](https://github.com/lakinmindfire)
+- [VershalaTandon](https://github.com/VershalaTandon)
+- [prashant-mindfire](https://github.com/prashant-mindfire)
+- [aryanxorian](https://github.com/aryanxorian)
+- [avishekthapamindfire0822](https://github.com/avishekthapamindfire0822)
+- [ArnabKMindfire](https://github.com/ArnabKMindfire)
