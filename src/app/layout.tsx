@@ -15,32 +15,44 @@ export const metadata: Metadata = {
   title: "Mindfire | FOSS",
   description:
     "Official GitHub Page for Mindfire Digital LLP. Explore our projects, contributions, and insights in technology, software development, and more. Join us in our journey to push the boundaries of innovation.",
-  applicationName: 'Mindfire FOSS',
-  referrer: 'origin-when-cross-origin',
-  keywords: ['Mindfire', 'FOSS', 'Mindfire FOSS', "React", "JavaScript", "next.js", "Opensource community", "Software Development"],
-  authors: [{ name: 'Mindfire' }, { name: 'Mindfire', url: 'https://mindfiredigital.github.io' }],
-  creator: 'Mindfire LLP ',
-  publisher: 'Mindfire LLP',
-  
+  applicationName: "Mindfire FOSS",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+    "Mindfire",
+    "FOSS",
+    "Mindfire FOSS",
+    "React",
+    "JavaScript",
+    "next.js",
+    "Opensource community",
+    "Software Development",
+  ],
+  authors: [
+    { name: "Mindfire" },
+    { name: "Mindfire", url: "https://mindfiredigital.github.io" },
+  ],
+  creator: "Mindfire Digital LLP",
+  publisher: "Mindfire Digital LLP",
+
   openGraph: {
-    title: "Mindfire | Open Source Collaboration",
+    title: "Mindfire | FOSS : Open Source Collaboration",
     description:
-      "Mindfire FOSS | Collaborative creativity, knowledge sharing, and positive global impact. Igniting innovation through open source collaboration with Mindfire.",
+      "Official GitHub Page for Mindfire Digital LLP. Explore our projects, contributions, and insights in technology, software development, and more. Join us in our journey to push the boundaries of innovation.",
     images: {
       url: "https://mindfiredigital.github.io/_next/static/media/mindfire_foss_logo.0c507a60.png",
-      height: "219",
-      width: "500",
+      height: "270",
+      width: "520",
     },
     url: "https://mindfiredigital.github.io/",
     type: "website",
-    siteName: "Mindfire",
+    siteName: "Mindfire Digital LLP",
     locale: "en_US",
   },
   twitter: {
     card: "app",
-    title: "Mindfire | Open Source Collaboration",
+    title: "Mindfire | FOSS : Open Source Collaboration",
     description:
-      "Collaborative creativity, knowledge sharing, and positive global impact. Igniting innovation through open source collaboration with Mindfire.",
+      "Official GitHub Page for Mindfire Digital LLP. Explore our projects, contributions, and insights in technology, software development, and more. Join us in our journey to push the boundaries of innovation.",
     site: "@mindfires",
     creator: "@mindfires",
     app: {
@@ -60,9 +72,9 @@ export const metadata: Metadata = {
       index: true,
       follow: false,
       noimageindex: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };
@@ -73,7 +85,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${roboto.className} !scroll-smooth`}>
+    <html lang='en' className={`${roboto.className} !scroll-smooth`}>
       <body>
         <Header />
         {children}
