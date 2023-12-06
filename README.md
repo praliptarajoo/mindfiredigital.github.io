@@ -1,5 +1,5 @@
 At Mindfire, we are passionate about open-source technology and its power to drive innovation and collaboration. Welcome to our open-source projects hub, where we contribute to and collaborate with the global open-source community on exciting and impactful projects.
-[Visit our official github page](https://github.com/mindfiredigital/mindfiredigital.github.io)
+[Visit our official github page](https://mindfiredigital.github.io/)
 
 ## About Us
 
