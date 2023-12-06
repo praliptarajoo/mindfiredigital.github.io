@@ -1,39 +1,46 @@
 At Mindfire, we are passionate about open-source technology and its power to drive innovation and collaboration. Welcome to our open-source projects hub, where we contribute to and collaborate with the global open-source community on exciting and impactful projects.
 
-About Us
-Mindfire Digital LLP, a leading provider of Software & IT services dedicated to enhancing business growth through the development and delivery of complex projects. With over two decades of experience, Mindfire has forged partnerships with global companies across diverse industries, consistently delivering stellar software products. Our highly skilled team of 650+ passionate technologists excels at connecting the dots between people, technology, products, and business, ensuring seamless innovation and success. [Visit our official website](https://www.mindfiredigitalllp.com/)
+## About Us
 
-Our Mission
+Mindfire Digital LLP, a leading provider of Software & IT services dedicated to enhancing business growth through the development and delivery of complex projects. With over two decades of experience, Mindfire has forged partnerships with global companies across diverse industries, consistently delivering stellar software products. Our highly skilled team of 650+ passionate technologists excels at connecting the dots between people, technology, products, and business, ensuring seamless innovation and success.
+[Visit our official website](https://www.mindfiredigitalllp.com/)
+
+## Our Mission
+
 Our mission is to foster creativity, share knowledge, and build solutions that make a positive impact on the world. We believe that by working together with the open-source community, we can tackle complex challenges and create cutting-edge solutions that benefit everyone.
 
-Why Open Source?
+## Why Open Source?
+
 Open source embodies the spirit of collaboration, transparency, and continuous improvement. By sharing our code, ideas, and expertise with the world, we aim to inspire others and contribute to a culture of innovation and learning.
 
-Our Contributions
+## Our Contributions
+
 Explore our growing list of open-source projects, ranging from software libraries and frameworks to tools and utilities. We are committed to actively contributing to these projects and maintaining a strong presence in the open-source ecosystem.
 
-Get Involved
+## Get Involved
+
 Join us on this exciting journey! Whether you're a developer, designer, tester, or simply passionate about open source, there are many ways to get involved. Contribute to our projects, report issues, suggest improvements, or simply engage in discussions.
 
-Explore Our Projects
+## Explore Our Projects
+
 Ready to dive in? We have exciting open-source projects in the pipeline, and they'll be coming soon to our growing community. Stay tuned for updates on our upcoming projects.
 
 We're actively working on these initiatives, and they'll be available for contributions and exploration in the near future. Be sure to check back regularly for updates!
 
-Connect with Us
+## Connect with Us
+
 Stay updated with our latest contributions and news. Follow us on social media, join our mailing list, and be part of our vibrant open-source community.
 
 Connect with us on social media and via email:
 
-[LinkedIn](https://www.linkedin.com/company/mindfire-solutions/)
-[Twitter](https://twitter.com/mindfires)
-[Instagram](https://www.instagram.com/mindfiresolutions/)
-[Facebook](https://www.facebook.com/MindfireSolutions)
+- [LinkedIn](https://www.linkedin.com/company/mindfire-solutions/)
+- [Twitter](https://twitter.com/mindfires)
+- [Instagram](https://www.instagram.com/mindfiresolutions/)
+- [Facebook](https://www.facebook.com/MindfireSolutions)
+
 We look forward to collaborating with you and making a meaningful impact through open source. Let's innovate together!
 
 [Visit our website](https://www.mindfiredigitalllp.com/)
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -50,10 +57,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 To build application for generating static files:
 
@@ -78,18 +81,3 @@ pnpm start:build
 # or
 bun start:build
 ```
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
