@@ -4,10 +4,40 @@ import Link from "next/link";
 import projectsImage from "../../../public/images/projects.webp";
 import ProjectGrid from "../projects/components/ProjectGrid";
 import projectData from "../projects/assets/projects.json";
+import meta from "../../metadata/metadata.json";
 
 export const metadata: Metadata = {
-    title: 'Mindfire | FOSS Current Projects',
-    description: "Discover and engage with Mindfire's current active open-source projects. Join a thriving developer community, contribute to cutting-edge initiatives, and enhance your skills. Explore, collaborate, and be a part of the innovation shaping the tech landscape at Mindfire."
+    title: meta["Current-Projects"].title,
+    description: meta["Current-Projects"].description,
+
+    openGraph: {
+      title: meta["Current-Projects"].title,
+      description: meta["Current-Projects"].description,
+      images: {
+        url: meta["Current-Projects"].openGraph.images,
+        height: "270",
+        width: "520",
+      },
+      url: meta["Current-Projects"].openGraph.url,
+      type: "website",
+      siteName: "Mindfire Digital LLP",
+      locale: "en_US",
+    },
+    twitter: {
+      card: "app",
+      title: meta["Current-Projects"].title,
+      description: meta["Current-Projects"].description,
+      site: "@mindfires",
+      creator: "@mindfires",
+      app: {
+        name: "twitter_app",
+        id: {
+          iphone: "twitter_app://iphone",
+          ipad: "twitter_app://ipad",
+          googleplay: "twitter_app://googleplay",
+        },
+      },
+    },
 }
 
 export default function ProjectsPage() {
@@ -24,7 +54,7 @@ export default function ProjectsPage() {
             </p>
             <div className='flex flex-wrap items-start gap-6 mt-10'>
               <Link
-                href='#all-projects'
+                href='#current-projects'
                 className='bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3'>
                 find projects
               </Link>
@@ -40,7 +70,7 @@ export default function ProjectsPage() {
           />
         </div>
       </section>
-      <div className='mb-20'>
+      <div id="current-projects" className='mb-20'>
         <ProjectGrid title='Current Projects' projectData={projectData} />
       </div>
     </>

@@ -5,10 +5,40 @@ import projectsImage from "../../../public/images/projects.webp";
 import ProjectGrid from "./components/ProjectGrid";
 import projectData from "./assets/projects.json";
 import upcomingProjectData from "./assets/upcomingProjects.json";
+import meta from "../../metadata/metadata.json";
 
 export const metadata: Metadata = {
-  title: 'Mindfire | FOSS Projects',
-  description: "Explore Mindfire's Open Source Projects Hub—a dynamic collection of innovative initiatives spanning various technologies. Contribute, collaborate, and enhance your skills within a vibrant developer community. Ignite your curiosity and shape the future of technology with our carefully curated open-source projects"
+  title: meta["Projects"].title,
+  description: meta["Projects"].description,
+
+  openGraph: {
+    title: meta["Projects"].title,
+    description: meta["Projects"].description,
+    images: {
+      url: meta["Projects"].openGraph.images,
+      height: "270",
+      width: "520",
+    },
+    url: meta["Projects"].openGraph.url,
+    type: "website",
+    siteName: "Mindfire Digital LLP",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "app",
+    title: meta["Projects"].title,
+    description: meta["Projects"].description,
+    site: "@mindfires",
+    creator: "@mindfires",
+    app: {
+      name: "twitter_app",
+      id: {
+        iphone: "twitter_app://iphone",
+        ipad: "twitter_app://ipad",
+        googleplay: "twitter_app://googleplay",
+      },
+    },
+  },
 }
 
 export default function ProjectsPage() {
@@ -41,12 +71,14 @@ export default function ProjectsPage() {
           />
         </div>
       </section>
-      <ProjectGrid title='Current Projects' projectData={projectData} />
-      <div className='mb-20'>
-        <ProjectGrid
-          title='Upcoming Projects'
-          projectData={upcomingProjectData}
-        />
+      <div id="all-projects">
+        <ProjectGrid title='Current Projects' projectData={projectData} />
+        <div className='mb-20'>
+          <ProjectGrid
+            title='Upcoming Projects'
+            projectData={upcomingProjectData}
+          />
+        </div>
       </div>
     </>
   );
