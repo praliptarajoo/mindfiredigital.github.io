@@ -1,9 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import projectsImage from "../../../public/images/projects.webp";
 import ProjectGrid from "./components/ProjectGrid";
 import projectData from "./assets/projects.json";
 import upcomingProjectData from "./assets/upcomingProjects.json";
+
+export const metadata: Metadata = {
+  title: 'Mindfire | FOSS Projects',
+  description: "Explore Mindfire's Open Source Projects Hub—a dynamic collection of innovative initiatives spanning various technologies. Contribute, collaborate, and enhance your skills within a vibrant developer community. Ignite your curiosity and shape the future of technology with our carefully curated open-source projects"
+}
 
 export default function ProjectsPage() {
   return (
