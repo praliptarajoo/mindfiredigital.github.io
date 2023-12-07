@@ -20,7 +20,7 @@ const navigations: Navigation[] = [
   },
   {
     name: "Projects",
-    path: ["/current-projects", "/upcoming-projects"]
+    path: ["/projects", "/current-projects", "/upcoming-projects"]
   },
   {
     name: "GitHub",
