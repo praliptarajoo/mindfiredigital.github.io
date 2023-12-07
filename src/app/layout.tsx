@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: meta["Home"].description,
     images: {
       // url: "https://mindfiredigital.github.io/_next/static/media/mindfire_foss_logo.0c507a60.png",
-      url: "https://res.cloudinary.com/dpey91b5a/image/upload/v1701939942/x9zenpz9n5hvyjrej3sj.png",
+      url: meta["Home"].openGraph.images,
       height: "627",
       width: "1200",
     },
