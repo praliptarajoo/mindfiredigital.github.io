@@ -29,13 +29,13 @@ const Header = () => {
                         "text-mf-red": navigation.path.includes(pathname),
                       })}
                     >
-                      <Link href={navigation.path[0]} type="button" className="relative z-10 inline-flex w-full justify-center bg-white text-sm" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                      <Link href={`${navigation.path[0]}#all-projects`} type="button" className="relative z-10 inline-flex w-full justify-center bg-white text-sm" id="menu-button" aria-expanded="true" aria-haspopup="true">
                         Projects
                       </Link>
                     </div>
                     <div className="projects-dropdown transition-all invisible absolute py-2 z-10 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
-                        <Link className="block px-4 py-2 hover:bg-mindfire-text-red hover:text-white" href={navigation.path[1]}>Current Projects</Link>
-                        <Link className="block px-4 py-2 hover:bg-mindfire-text-red hover:text-white" href={navigation.path[2]}>Upcoming Projects</Link>
+                        <Link className="block px-4 py-2 hover:bg-mindfire-text-red hover:text-white" href={`${navigation.path[1]}#current-projects`}>Current Projects</Link>
+                        <Link className="block px-4 py-2 hover:bg-mindfire-text-red hover:text-white" href={`${navigation.path[2]}#upcoming-projects`}>Upcoming Projects</Link>
                     </div>
                   </div>
                   ) : (
