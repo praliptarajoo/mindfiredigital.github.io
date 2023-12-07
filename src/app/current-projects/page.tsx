@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import projectsImage from "../../../public/images/projects.webp";
-import ProjectGrid from "./components/ProjectGrid";
-import projectData from "./assets/projects.json";
-import upcomingProjectData from "./assets/upcomingProjects.json";
+import ProjectGrid from "../projects/components/ProjectGrid";
+import projectData from "../projects/assets/projects.json";
 
 export const metadata: Metadata = {
-  title: 'Mindfire | FOSS Projects',
-  description: "Explore Mindfire's Open Source Projects Hub—a dynamic collection of innovative initiatives spanning various technologies. Contribute, collaborate, and enhance your skills within a vibrant developer community. Ignite your curiosity and shape the future of technology with our carefully curated open-source projects"
+    title: 'Mindfire | FOSS Current Projects',
+    description: "Discover and engage with Mindfire's current active open-source projects. Join a thriving developer community, contribute to cutting-edge initiatives, and enhance your skills. Explore, collaborate, and be a part of the innovation shaping the tech landscape at Mindfire."
 }
 
 export default function ProjectsPage() {
@@ -41,12 +40,8 @@ export default function ProjectsPage() {
           />
         </div>
       </section>
-      <ProjectGrid title='Current Projects' projectData={projectData} />
       <div className='mb-20'>
-        <ProjectGrid
-          title='Upcoming Projects'
-          projectData={upcomingProjectData}
-        />
+        <ProjectGrid title='Current Projects' projectData={projectData} />
       </div>
     </>
   );
