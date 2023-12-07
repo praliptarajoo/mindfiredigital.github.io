@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     images: {
       // url: "https://mindfiredigital.github.io/_next/static/media/mindfire_foss_logo.0c507a60.png",
       url: "https://res.cloudinary.com/dpey91b5a/image/upload/v1701939942/x9zenpz9n5hvyjrej3sj.png",
-      height: "270",
-      width: "520",
+      height: "627",
+      width: "1200",
     },
     url: "https://mindfiredigital.github.io/",
     type: "website",

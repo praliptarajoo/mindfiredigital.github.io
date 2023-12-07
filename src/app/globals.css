@@ -374,3 +374,7 @@
     .hover-underline {
       @apply border-b-2 border-transparent transition-[border-color] duration-300 hover:border-mindfire-text-red hover:border-b-2}
   }
+
+  .header-projects:hover .projects-dropdown {
+    visibility: visible;
+  }
