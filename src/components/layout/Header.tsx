@@ -7,9 +7,11 @@ import mindfireFossLogo from "../../../public/images/mindfire_foss_logo.png";
 import ExternalRedirectIcon from "../shared/icons/ExternalRedirectIcon";
 import { usePathname } from "next/navigation";
 import { cn } from "@/app/utils";
+import { useState } from "react";
 
 const Header = () => {
   const pathname = usePathname();
+  const [isProjectsDropdown, setIsProjectsDropdown] = useState(false);
 
   return (
     <header className="px-6 py-2 flex justify-between md:items-center sticky z-50 top-0 bg-white">
@@ -21,25 +23,45 @@ const Header = () => {
           <ul className="flex gap-9">
             {navigations.map((navigation, index) => (
               <li key={index} className="group">
-                <Link
-                  href={navigation.path}
-                  className={cn(
-                    "group-hover:text-mf-red flex items-center gap-1 align-middle",
-                    {
-                      "text-mf-red": pathname === navigation.path,
-                    }
+                {navigation.name === "Projects" ? (
+                  <div className="relative">
+                    <div className={cn(
+                      "group-hover:text-mf-red",
+                      {
+                        "text-mf-red": navigation.path.includes(pathname),
+                      })}
+                    >
+                      <button type="button" onClick={() => setIsProjectsDropdown(!isProjectsDropdown)} className="relative z-10 inline-flex w-full justify-center bg-white text-sm" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                        Projects
+                      </button>
+                    </div>
+                   {isProjectsDropdown && <button onClick={() => setIsProjectsDropdown(false)} className="fixed inset-0 w-full h-full bg-transparent cursor-default"></button>}
+                   {isProjectsDropdown && <div onClick={() => setIsProjectsDropdown(false)} className="absolute py-2 z-10 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
+                      <Link className="block px-4 py-2 hover:bg-mindfire-text-red hover:text-white" href={navigation.path[0]}>Current Projects</Link>
+                      <Link className="block px-4 py-2 hover:bg-mindfire-text-red hover:text-white" href={navigation.path[1]}>Upcoming Projects</Link>
+                    </div>}
+                  </div>
+                  ) : (
+                    <Link
+                        href={navigation.path[0]}
+                        className={cn(
+                          "group-hover:text-mf-red flex items-center gap-1 align-middle",
+                          {
+                            "text-mf-red": navigation.path.includes(pathname),
+                          }
+                        )}
+                        {...(navigation.target ? { target: navigation.target } : {})}
+                      >
+                        <span>{navigation.name}</span>
+                        {navigation.icon && navigation.iconAlt ? (
+                          <ExternalRedirectIcon
+                            height="1.2em"
+                            width="1.2em"
+                            className="group-hover:stroke-mf-red -pt-2 inline-block"
+                          />
+                        ) : null}
+                    </Link>
                   )}
-                  {...(navigation.target ? { target: navigation.target } : {})}
-                >
-                  <span>{navigation.name}</span>
-                  {navigation.icon && navigation.iconAlt ? (
-                    <ExternalRedirectIcon
-                      height="1.2em"
-                      width="1.2em"
-                      className="group-hover:stroke-mf-red -pt-2 inline-block"
-                    />
-                  ) : null}
-                </Link>
               </li>
             ))}
           </ul>
