@@ -39,7 +39,8 @@ export const metadata: Metadata = {
     description:
       "Official GitHub Page for Mindfire Digital LLP. Explore our projects, contributions, and insights in technology, software development, and more. Join us in our journey to push the boundaries of innovation.",
     images: {
-      url: "https://mindfiredigital.github.io/_next/static/media/mindfire_foss_logo.0c507a60.png",
+      // url: "https://mindfiredigital.github.io/_next/static/media/mindfire_foss_logo.0c507a60.png",
+      url: "https://res.cloudinary.com/dpey91b5a/image/upload/v1701939942/x9zenpz9n5hvyjrej3sj.png",
       height: "270",
       width: "520",
     },
