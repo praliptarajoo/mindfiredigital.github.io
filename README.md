@@ -17,7 +17,7 @@ Open source embodies the spirit of collaboration, transparency, and continuous i
 ## Our Contributions
 
 Explore our growing list of open-source projects, ranging from software libraries and frameworks to tools and utilities. We are committed to actively contributing to these projects and maintaining a strong presence in the open-source ecosystem.
-(https://github.com/mindfiredigital/mindfiredigital.github.io/blob/dev/CONTRIBUTING.md)
+[Read our contribution guide](https://github.com/mindfiredigital/mindfiredigital.github.io/blob/dev/CONTRIBUTING.md)
 
 ## Get Involved
 
