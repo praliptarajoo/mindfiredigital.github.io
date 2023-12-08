@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     description: meta["Projects"].description,
     images: {
       url: meta["Projects"].openGraph.images,
-      height: "270",
-      width: "520",
+      height: "627",
+      width: "1200",
     },
     url: meta["Projects"].openGraph.url,
     type: "website",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       },
     },
   },
-}
+};
 
 export default function ProjectsPage() {
   return (
@@ -71,7 +71,7 @@ export default function ProjectsPage() {
           />
         </div>
       </section>
-      <div id="all-projects">
+      <div id='all-projects'>
         <ProjectGrid title='Current Projects' projectData={projectData} />
         <div className='mb-20'>
           <ProjectGrid
