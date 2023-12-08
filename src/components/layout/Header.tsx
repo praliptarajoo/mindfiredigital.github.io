@@ -28,7 +28,7 @@ const Header = () => {
                         "text-mf-red": navigation.path.includes(pathname),
                       })}
                     >
-                      <Link href={`${navigation.path[0]}#all-projects`} type="button" className="relative z-10 inline-flex w-full justify-center bg-white text-sm" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                      <Link href={navigation.path[0]} type="button" className="relative z-10 inline-flex w-full justify-center bg-white text-sm" id="menu-button" aria-expanded="true" aria-haspopup="true">
                         Projects
                       </Link>
                     </div>
