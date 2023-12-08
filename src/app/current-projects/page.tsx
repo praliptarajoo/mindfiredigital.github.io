@@ -7,38 +7,38 @@ import projectData from "../projects/assets/projects.json";
 import meta from "../../metadata/metadata.json";
 
 export const metadata: Metadata = {
+  title: meta["Current-Projects"].title,
+  description: meta["Current-Projects"].description,
+
+  openGraph: {
     title: meta["Current-Projects"].title,
     description: meta["Current-Projects"].description,
-
-    openGraph: {
-      title: meta["Current-Projects"].title,
-      description: meta["Current-Projects"].description,
-      images: {
-        url: meta["Current-Projects"].openGraph.images,
-        height: "270",
-        width: "520",
-      },
-      url: meta["Current-Projects"].openGraph.url,
-      type: "website",
-      siteName: "Mindfire Digital LLP",
-      locale: "en_US",
+    images: {
+      url: meta["Current-Projects"].openGraph.images,
+      height: "627",
+      width: "1200",
     },
-    twitter: {
-      card: "app",
-      title: meta["Current-Projects"].title,
-      description: meta["Current-Projects"].description,
-      site: "@mindfires",
-      creator: "@mindfires",
-      app: {
-        name: "twitter_app",
-        id: {
-          iphone: "twitter_app://iphone",
-          ipad: "twitter_app://ipad",
-          googleplay: "twitter_app://googleplay",
-        },
+    url: meta["Current-Projects"].openGraph.url,
+    type: "website",
+    siteName: "Mindfire Digital LLP",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "app",
+    title: meta["Current-Projects"].title,
+    description: meta["Current-Projects"].description,
+    site: "@mindfires",
+    creator: "@mindfires",
+    app: {
+      name: "twitter_app",
+      id: {
+        iphone: "twitter_app://iphone",
+        ipad: "twitter_app://ipad",
+        googleplay: "twitter_app://googleplay",
       },
     },
-}
+  },
+};
 
 export default function ProjectsPage() {
   return (
@@ -70,7 +70,7 @@ export default function ProjectsPage() {
           />
         </div>
       </section>
-      <div id="current-projects" className='mb-20'>
+      <div id='current-projects' className='mb-20'>
         <ProjectGrid title='Current Projects' projectData={projectData} />
       </div>
     </>
