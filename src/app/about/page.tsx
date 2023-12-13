@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -56,13 +57,15 @@ const About = () => {
             <div className='flex flex-wrap items-start gap-6 mt-10'>
               <Link
                 href='/projects'
-                className='bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3'>
+                className='bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3'
+              >
                 explore projects
               </Link>
               <Link
                 target='_blank'
                 href='https://www.mindfiresolutions.com/contact-us/'
-                className='bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3'>
+                className='bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3'
+              >
                 contact us
               </Link>
             </div>
@@ -93,11 +96,13 @@ const About = () => {
       <AboutSegmentSection
         title='Our Contributions'
         description='Explore our growing list of open source projects, ranging from software libraries and frameworks to tools and utilities. We are committed to actively contributing to these projects and maintaining a strong presence in the open source ecosystem.'
-        className='mb-24'>
+        className='mb-24'
+      >
         <div className='text-center'>
           <Link
             href='/projects#all-projects'
-            className='bg-mf-red tracking-wider text-white rounded-full px-5 py-3'>
+            className='bg-mf-red tracking-wider text-white rounded-full px-5 py-3'
+          >
             Explore projects
           </Link>
         </div>

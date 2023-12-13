@@ -24,7 +24,8 @@ export default function Home() {
         </div>
         <Link
           href='/projects'
-          className='text-white bg-mf-red font-medium text-base rounded-full px-6 py-3 text-center tracking-wide'>
+          className='text-white bg-mf-red font-medium text-base rounded-full px-6 py-3 text-center tracking-wide'
+        >
           Explore Projects
         </Link>
       </div>

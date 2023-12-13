@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -55,7 +56,8 @@ export default function ProjectsPage() {
             <div className='flex flex-wrap items-start gap-6 mt-10'>
               <Link
                 href='#upcoming-projects'
-                className='bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3'>
+                className='bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3'
+              >
                 find projects
               </Link>
             </div>
