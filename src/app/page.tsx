@@ -1,3 +1,4 @@
+import React from "react";
 import TypeAnimationWrapper from "@/components/shared/TypeAnimationWrapper";
 import Image from "next/image";
 import particleAnimation from "../../public/images/particle_animation_optimised.gif";
