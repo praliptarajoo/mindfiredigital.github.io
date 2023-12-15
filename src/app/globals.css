@@ -361,20 +361,21 @@
     unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
     font-display: swap
   } */
-  
-  body {
-    /* font-family: "Nunito Sans"; */
-    /* line-height: 1.5; */
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-  }
 
-  @layer utilities {
-    .hover-underline {
-      @apply border-b-2 border-transparent transition-[border-color] duration-300 hover:border-mindfire-text-red hover:border-b-2}
-  }
+body {
+  /* font-family: "Nunito Sans"; */
+  /* line-height: 1.5; */
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 
-  .header-projects:hover .projects-dropdown {
-    visibility: visible;
+@layer utilities {
+  .hover-underline {
+    @apply border-b-2 border-transparent transition-[border-color] duration-300 hover:border-mindfire-text-red hover:border-b-2;
   }
+}
+
+.header-projects:hover .projects-dropdown {
+  visibility: visible;
+}

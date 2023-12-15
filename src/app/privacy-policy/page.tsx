@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from "react";
 
 const privacyPolicyContentData = [
   {
@@ -32,21 +33,21 @@ const privacyPolicyContentData = [
         being sent. If they do so, note that some parts of the Site may not
         function properly.`,
   },
-//   {
-//     title: "HOW WE USE COLLECTED INFORMATION",
-//     description: `Mindfire Digital GitHub may collect and use the Users’ personal
-//         information for the following purposes: To improve customer service –
-//         Information you provide helps us respond to your service requests and
-//         support needs efficiently. To personalise user experience – We may use
-//         information in the aggregate to understand how our Users as a group use
-//         the services and resources provided on our Site. To improve our Site –
-//         We may use feedback you provide to improve our products and services. To
-//         process payments – We may use the information Users provide about
-//         themselves when placing a service request only to address it. We do not
-//         share this information with outside parties except to the extent
-//         necessary to provide the service. To send Users information they agreed
-//         to receive about topics we think will be of interest to them.`,
-//   },
+  //   {
+  //     title: "HOW WE USE COLLECTED INFORMATION",
+  //     description: `Mindfire Digital GitHub may collect and use the Users’ personal
+  //         information for the following purposes: To improve customer service –
+  //         Information you provide helps us respond to your service requests and
+  //         support needs efficiently. To personalise user experience – We may use
+  //         information in the aggregate to understand how our Users as a group use
+  //         the services and resources provided on our Site. To improve our Site –
+  //         We may use feedback you provide to improve our products and services. To
+  //         process payments – We may use the information Users provide about
+  //         themselves when placing a service request only to address it. We do not
+  //         share this information with outside parties except to the extent
+  //         necessary to provide the service. To send Users information they agreed
+  //         to receive about topics we think will be of interest to them.`,
+  //   },
   {
     title: "HOW WE PROTECT YOUR INFORMATION",
     description: `We adopt appropriate data collection, storage and processing practices
@@ -63,16 +64,16 @@ const privacyPolicyContentData = [
         or investigatory body requests. Or, we might also share information when
         we are investigating potential fraud.`,
   },
-//   {
-//     title: "GOOGLE ADSENSE",
-//     description: `Some of the ads may be served by Google. Google’s use of the DART cookie
-//         enables it to serve ads to Users based on their visit to our Site and
-//         other sites on the Internet. DART uses “non personally identifiable
-//         information” and does NOT track personal information about you, such as
-//         your name, email address, physical address, etc. You may opt out of the
-//         use of the DART cookie by visiting the Google ad and content network
-//         privacy policy at http://www.google.com/privacy_ads.html`,
-//   },
+  //   {
+  //     title: "GOOGLE ADSENSE",
+  //     description: `Some of the ads may be served by Google. Google’s use of the DART cookie
+  //         enables it to serve ads to Users based on their visit to our Site and
+  //         other sites on the Internet. DART uses “non personally identifiable
+  //         information” and does NOT track personal information about you, such as
+  //         your name, email address, physical address, etc. You may opt out of the
+  //         use of the DART cookie by visiting the Google ad and content network
+  //         privacy policy at http://www.google.com/privacy_ads.html`,
+  //   },
   {
     title: "CHANGES TO THIS PRIVACY POLICY",
     description: `Mindfire Digital GitHub has the discretion to update this privacy policy
@@ -93,14 +94,14 @@ const privacyPolicyContentData = [
 
 const PrivacyPolicy = () => {
   return (
-    <div className="max-w-4xl mx-auto my-10 px-6">
-      <p className="tracking-wider text-mindfire-content-p-text-color">
+    <div className='max-w-4xl mx-auto my-10 px-6'>
+      <p className='tracking-wider text-mindfire-content-p-text-color'>
         This Privacy Policy governs the manner in which
         mindfiredigital.github.io collects, uses, maintains and discloses
         information collected from users (each, a “User”) of the{" "}
         <Link
-          href="https://mindfiredigital.github.io/"
-          className="text-mf-red hover:text-blue-400"
+          href='https://mindfiredigital.github.io/'
+          className='text-mf-red hover:text-blue-400'
         >
           https://mindfiredigital.github.io/
         </Link>{" "}
@@ -111,10 +112,10 @@ const PrivacyPolicy = () => {
       {privacyPolicyContentData.map(({ title, description }, index) => {
         return (
           <div key={index}>
-            <h3 className="mt-10 mb-2 text-mindfire-content-p-text-color font-semibold text-lg tracking-wider">
+            <h3 className='mt-10 mb-2 text-mindfire-content-p-text-color font-semibold text-lg tracking-wider'>
               {title}
             </h3>
-            <p className="tracking-wider text-mindfire-content-p-text-color">
+            <p className='tracking-wider text-mindfire-content-p-text-color'>
               {description}
             </p>
           </div>
