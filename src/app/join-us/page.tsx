@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import { joinUsGetStartSectionData } from "@/constants";
 import Image from "next/image";
@@ -56,7 +57,8 @@ const JoinUs = () => {
             <div className='flex flex-wrap items-start gap-6 mt-10'>
               <Link
                 href='/projects'
-                className='bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3'>
+                className='bg-mf-red text-center text-white tracking-widest capitalize rounded-full px-8 py-3'
+              >
                 explore projects
               </Link>
             </div>

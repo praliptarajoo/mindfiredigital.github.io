@@ -1,3 +1,4 @@
+import React from "react";
 import TypeAnimationWrapper from "@/components/shared/TypeAnimationWrapper";
 import Image from "next/image";
 import particleAnimation from "../../public/images/particle_animation_optimised.gif";
@@ -24,7 +25,8 @@ export default function Home() {
         </div>
         <Link
           href='/projects'
-          className='text-white bg-mf-red font-medium text-base rounded-full px-6 py-3 text-center tracking-wide'>
+          className='text-white bg-mf-red font-medium text-base rounded-full px-6 py-3 text-center tracking-wide'
+        >
           Explore Projects
         </Link>
       </div>

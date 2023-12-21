@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import fs from "fs/promises";
@@ -18,7 +18,7 @@ const Content = async (props: { children: ReactNode }) => {
   const fileContents = await fs.readFile(fullPath, "utf8");
 
   return (
-    <div className="max-w-5xl px-24 py-8 my-0 mx-auto">
+    <div className='max-w-5xl px-24 py-8 my-0 mx-auto'>
       <Markdown
         remarkPlugins={[remarkGfm]}
         components={{
@@ -26,7 +26,7 @@ const Content = async (props: { children: ReactNode }) => {
             const { ...rest } = props;
             return (
               <h2
-                className="text-mindfire-text-black mt-8 mb-4 text-lg font-bold"
+                className='text-mindfire-text-black mt-8 mb-4 text-lg font-bold'
                 {...rest}
               />
             );
@@ -35,7 +35,7 @@ const Content = async (props: { children: ReactNode }) => {
             const { ...rest } = props;
             return (
               <p
-                className="my-4 first-of-type:my-0 text-lg text-mindfire-content-p-text-color"
+                className='my-4 first-of-type:my-0 text-lg text-mindfire-content-p-text-color'
                 {...rest}
               />
             );
@@ -44,7 +44,7 @@ const Content = async (props: { children: ReactNode }) => {
             const { ...rest } = props;
             return (
               <ul
-                className="mt-0 list-disc ps-10 my-4 text-lg text-mindfire-content-p-text-color"
+                className='mt-0 list-disc ps-10 my-4 text-lg text-mindfire-content-p-text-color'
                 {...rest}
               />
             );
@@ -53,7 +53,7 @@ const Content = async (props: { children: ReactNode }) => {
             const { ...rest } = props;
             return (
               <li
-                className="pb-1 text-lg text-mindfire-content-p-text-color font-semibold"
+                className='pb-1 text-lg text-mindfire-content-p-text-color font-semibold'
                 {...rest}
               />
             );
@@ -62,7 +62,7 @@ const Content = async (props: { children: ReactNode }) => {
             const { ...rest } = props;
             return (
               <a
-                className="text-mindfire-text-red font-semibold text-lg pb-[2px] hover-underline"
+                className='text-mindfire-text-red font-semibold text-lg pb-[2px] hover-underline'
                 {...rest}
               />
             );
