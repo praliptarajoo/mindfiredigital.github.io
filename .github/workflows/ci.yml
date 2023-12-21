@@ -10,6 +10,9 @@ jobs:
   build:
     name: 'Build Mindfire FOSS application'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: read
     steps:
       - name: 'Checkout repository'
         uses: actions/checkout@v2
