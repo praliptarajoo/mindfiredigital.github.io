@@ -17,11 +17,17 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v2
 
+      - name: 'Delete build-run branch if it exists'
+        run: |
+          if git show-ref --quiet refs/remotes/origin/build-run; then
+            git push --delete origin build-run
+          fi
+
       - name: 'Create build-run branch'
         run: |
           git fetch origin
           git checkout -b build-run
-          git push origin build-run
+          git push -u origin build-run
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
