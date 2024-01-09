@@ -9,6 +9,6 @@
   "/current-projects/page": "app/current-projects/page.js",
   "/join-us/page": "app/join-us/page.js",
   "/projects/page": "app/projects/page.js",
-  "/about/page": "app/about/page.js",
-  "/upcoming-projects/page": "app/upcoming-projects/page.js"
+  "/upcoming-projects/page": "app/upcoming-projects/page.js",
+  "/about/page": "app/about/page.js"
 }
