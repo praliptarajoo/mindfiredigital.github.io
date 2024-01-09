@@ -19,6 +19,7 @@ jobs:
 
       - name: 'Delete build-run branch if it exists'
         run: |
+          git fetch origin
           if git show-ref --quiet refs/remotes/origin/build-run; then
             git push --delete origin build-run
           fi
