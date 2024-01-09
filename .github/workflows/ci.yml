@@ -34,3 +34,23 @@ jobs:
           default_author: github_actions
           message: 'build: build application'
           fetch: false
+
+      - name: Fetch branches and create gh-pages branch
+        run: |
+          git fetch origin
+      
+      - name: Copy to temp-directory
+        run: |
+          mkdir /tmp/temp-directory
+          cp -r .next/* /tmp/temp-directory/
+          git checkout gh-pages
+          git rm -rf .
+          cp -r /tmp/temp-directory/ .
+          git add temp-directory/
+          git commit -m "Copy main-folder to gh-pages branch"
+      
+      - name: Push to gh-pages
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin gh-pages
