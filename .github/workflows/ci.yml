@@ -17,21 +17,11 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v2
 
-      - name: 'Delete build-run branch if it exists'
+      - name: 'Create new-branch branch'
         run: |
           git fetch origin
-          if git show-ref --quiet refs/remotes/origin/build-run; then
-            git push --delete origin build-run
-          fi
-
-      - name: 'Create build-run branch'
-        run: |
-          git fetch origin
-          git checkout main
-          git reset --hard origin/main
-          git branch -D build-run || true
-          git checkout -b build-run
-          git push -u origin build-run
+          git checkout -b new-branch
+          git push -u origin new-branch
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -70,3 +60,9 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git push origin gh-pages
+
+      - name: 'Delete new-branch branch'
+        run: |
+          git fetch origin
+          git push --delete origin new-branch
+          git branch -D new-branch || true
