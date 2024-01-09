@@ -27,6 +27,9 @@ jobs:
       - name: 'Create build-run branch'
         run: |
           git fetch origin
+          git checkout main
+          git reset --hard origin/main
+          git branch -D build-run || true
           git checkout -b build-run
           git push -u origin build-run
 
