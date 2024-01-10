@@ -36,19 +36,21 @@ jobs:
           git config --local user.email "praliptarajoo@gmail.com"
           git config --local user.name "praliptarajoo"
 
+      - name: 'Resolve merge conflicts if any'
+        run: |
+          git checkout main
+          git fetch origin
+          git reset --hard origin/main  # Reset local main branch to match remote
+
       - name: 'Copy build artifacts to gh-pages branch'
         run: |
           mkdir /tmp/temp-directory
-          if git status --porcelain | grep ".next"; then
-            git stash
-          fi
           cp -r .next/* /tmp/temp-directory/
           git checkout gh-pages
           git rm -rf .
           cp -r /tmp/temp-directory/ .
           git add temp-directory/ 
           git commit -m "Copy build artifacts from main to gh-pages branch"
-          git stash pop || true
 
       - name: Push to gh-pages
         env:
@@ -59,7 +61,3 @@ jobs:
       - name: 'Switch back to main branch'
         run: |
           git checkout main
-          git merge --abort
-          git checkout .
-          git fetch origin
-          git reset --hard origin/main
