@@ -29,6 +29,10 @@ jobs:
         run: |
           npm run build
           ls -la
+      - name: 'Copy build artifacts to gh-pages branch'
+        run: |
+          mkdir /tmp/temp-directory
+          ls -la
 
       # - name: 'Fetch branches'
       #   run: git fetch origin
