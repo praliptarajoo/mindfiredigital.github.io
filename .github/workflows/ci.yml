@@ -32,6 +32,7 @@ jobs:
       - name: 'Copy build artifacts to gh-pages branch'
         run: |
           mkdir /tmp/temp-directory
+          pwd
           ls -la
 
       # - name: 'Fetch branches'
