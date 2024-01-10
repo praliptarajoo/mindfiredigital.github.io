@@ -44,13 +44,9 @@ jobs:
 
       - name: 'Copy build artifacts to gh-pages branch'
         run: |
-          # mkdir /tmp/temp-directory
-          # cp -r build/* /tmp/temp-directory/
           git checkout gh-pages
           git rm -rf .
-          # cp -r /tmp/temp-directory/ .
           cd build
-          ls -la
           git add . 
           git commit -m "Copy build artifacts from main to gh-pages branch"
 
