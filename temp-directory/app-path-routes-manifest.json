@@ -6,9 +6,9 @@
   "/github/page": "/github",
   "/privacy-policy/page": "/privacy-policy",
   "/terms-of-use/page": "/terms-of-use",
-  "/join-us/page": "/join-us",
   "/current-projects/page": "/current-projects",
-  "/upcoming-projects/page": "/upcoming-projects",
+  "/about/page": "/about",
+  "/join-us/page": "/join-us",
   "/projects/page": "/projects",
-  "/about/page": "/about"
+  "/upcoming-projects/page": "/upcoming-projects"
 }
