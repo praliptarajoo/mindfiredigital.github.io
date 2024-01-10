@@ -36,11 +36,11 @@ jobs:
           git config --local user.email "mailto:github-actions@github.com"
           git config --local user.name "GitHub Actions"
 
-      - name: 'Resolve merge conflicts if any'
-        run: |
-          git checkout main
-          git fetch origin
-          git reset --hard origin/main  
+      # - name: 'Resolve merge conflicts if any'
+      #   run: |
+      #     git checkout main
+      #     git fetch origin
+      #     git reset --hard origin/main  
 
       - name: 'Copy build artifacts to gh-pages branch'
         run: |
@@ -48,9 +48,7 @@ jobs:
           cp -r build/* /tmp/temp-directory/
           git checkout gh-pages
           rm -rf *
-          ls -la
           cp -r /tmp/temp-directory/* .
-          ls -la
           git add . 
           git commit -m "Copy build artifacts from main to gh-pages branch"
 
