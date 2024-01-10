@@ -47,7 +47,7 @@ jobs:
           mkdir /tmp/temp-directory
           cp -r build/* /tmp/temp-directory/
           git checkout gh-pages
-          git rm -rf .
+          rm -rf .
           cp -r /tmp/temp-directory/ .
           ls -la
           git add temp-directory/* 
