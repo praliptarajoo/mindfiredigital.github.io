@@ -37,7 +37,7 @@ jobs:
           git config --local user.name "GitHub Actions"
 
       # - name: 'Resolve merge conflicts if any'
-      #   run: |
+      #   run: | hey
       #     git checkout main
       #     git fetch origin
       #     git reset --hard origin/main  
