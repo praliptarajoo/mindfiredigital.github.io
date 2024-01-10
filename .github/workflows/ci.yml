@@ -28,7 +28,7 @@ jobs:
       - name: 'Build application'
         run: |
           npm run build
-          ls
+          ls -la
 
       # - name: 'Fetch branches'
       #   run: git fetch origin
