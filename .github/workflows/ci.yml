@@ -33,6 +33,7 @@ jobs:
         run: |
           mkdir /tmp/temp-directory
           cp -r .next/* /tmp/temp-directory/
+          git fetch origin
           git checkout gh-pages
           git rm -rf .
           cp -r /tmp/temp-directory/ .
