@@ -31,10 +31,10 @@ jobs:
       - name: 'Fetch branches'
         run: git fetch origin
       
-      # - name: 'Set Git user name and email'
-      #   run: |
-      #     git config --local user.email "praliptarajoo@gmail.com"
-      #     git config --local user.name "praliptarajoo"
+      - name: 'Set Git user name and email'
+        run: |
+          git config --local user.email "praliptarajoo@gmail.com"
+          git config --local user.name "praliptarajoo"
 
       - name: 'Resolve merge conflicts if any'
         run: |
