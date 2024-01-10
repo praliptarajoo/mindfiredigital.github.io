@@ -39,8 +39,9 @@ jobs:
       - name: 'Resolve merge conflicts if any'
         run: |
           git checkout main
-          git fetch origin
-          git reset --hard origin/main  
+          git status
+          # git fetch origin
+          # git reset --hard origin/main  
 
       - name: 'Copy build artifacts to gh-pages branch'
         run: |
