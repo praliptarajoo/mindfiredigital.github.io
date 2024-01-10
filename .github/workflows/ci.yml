@@ -57,4 +57,9 @@ jobs:
           git push origin gh-pages
 
       - name: 'Switch back to main branch'
-        run: git checkout main
+        run: |
+          git checkout main
+          git merge --abort
+          git checkout .
+          git fetch origin
+          git reset --hard origin/main
