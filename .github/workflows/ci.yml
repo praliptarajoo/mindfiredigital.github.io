@@ -26,53 +26,38 @@ jobs:
         run: npm install
 
       - name: 'Build application'
+        run: npm run build
+
+      - name: 'Fetch branches'
+        run: git fetch origin
+      
+      - name: 'Set Git user name and email'
         run: |
-          npm run build
-          ls -la
+          git config --local user.email "mailto:github-actions@github.com"
+          git config --local user.name "GitHub Actions"
+
+      - name: 'Resolve merge conflicts if any'
+        run: |
+          git checkout main
+          git fetch origin
+          git reset --hard origin/main  
+
       - name: 'Copy build artifacts to gh-pages branch'
         run: |
           mkdir /tmp/temp-directory
           cp -r .next/* /tmp/temp-directory/
-          git fetch origin
           git checkout gh-pages
           git rm -rf .
           cp -r /tmp/temp-directory/ .
           git add temp-directory/ 
-          git status
-          pwd 
-          ls -la
+          git commit -m "Copy build artifacts from main to gh-pages branch"
 
-      # - name: 'Fetch branches'
-      #   run: git fetch origin
-      
-      # - name: 'Set Git user name and email'
-      #   run: |
-      #     git config --local user.email "github-actions@github.com"
-      #     git config --local user.name "GitHub Actions"
+      - name: Push to gh-pages
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin gh-pages
 
-      # - name: 'Resolve merge conflicts if any'
-      #   run: |
-      #     git checkout main
-      #     git status
-      #     # git fetch origin
-      #     # git reset --hard origin/main  
-
-      # - name: 'Copy build artifacts to gh-pages branch'
-      #   run: |
-      #     mkdir /tmp/temp-directory
-      #     cp -r .next/* /tmp/temp-directory/
-      #     git checkout gh-pages
-      #     git rm -rf .
-      #     cp -r /tmp/temp-directory/ .
-      #     git add temp-directory/ 
-      #     git commit -m "Copy build artifacts from main to gh-pages branch"
-
-      # - name: Push to gh-pages
-      #   env:
-      #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: |
-      #     git push origin gh-pages
-
-      # - name: 'Switch back to main branch'
-      #   run: |
-      #     git checkout main
+      - name: 'Switch back to main branch'
+        run: |
+          git checkout main
