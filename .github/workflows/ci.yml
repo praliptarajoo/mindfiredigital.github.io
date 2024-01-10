@@ -31,10 +31,15 @@ jobs:
           ls -la
       - name: 'Copy build artifacts to gh-pages branch'
         run: |
-          mkdir /home/runner/work/mindfiredigital.github.io/mindfiredigital.github.io/temp-directory
-          cp -r .next/* temp-directory/
-          cd temp-directory
-          ls
+          mkdir /tmp/temp-directory
+          cp -r .next/* /tmp/temp-directory/
+          git checkout gh-pages
+          git rm -rf .
+          cp -r /tmp/temp-directory/ .
+          git add temp-directory/ 
+          git status
+          pwd 
+          ls -la
 
       # - name: 'Fetch branches'
       #   run: git fetch origin
