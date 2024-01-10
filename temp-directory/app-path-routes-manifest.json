@@ -7,8 +7,8 @@
   "/privacy-policy/page": "/privacy-policy",
   "/terms-of-use/page": "/terms-of-use",
   "/current-projects/page": "/current-projects",
-  "/about/page": "/about",
-  "/upcoming-projects/page": "/upcoming-projects",
   "/join-us/page": "/join-us",
-  "/projects/page": "/projects"
+  "/about/page": "/about",
+  "/projects/page": "/projects",
+  "/upcoming-projects/page": "/upcoming-projects"
 }
