@@ -33,8 +33,8 @@ jobs:
       
       - name: 'Set Git user name and email'
         run: |
-          git config --local user.email "praliptarajoo@gmail.com"
-          git config --local user.name "praliptarajoo"
+          git config --local user.email "github-actions@github.com"
+          git config --local user.name "GitHub Actions"
 
       - name: 'Resolve merge conflicts if any'
         run: |
