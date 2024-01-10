@@ -49,6 +49,7 @@ jobs:
           git checkout gh-pages
           git rm -rf .
           cp -r /tmp/temp-directory/ .
+          ls -la
           git add temp-directory/* 
           git commit -m "Copy build artifacts from main to gh-pages branch"
 
