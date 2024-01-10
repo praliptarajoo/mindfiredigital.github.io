@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && touch ./docs/.nojekyll",
+    "build": "next build && touch ./build/.nojekyll",
     "start": "next start",
     "lint": "next lint",
-    "start:build": "serve ./docs",
+    "start:build": "serve ./build",
     "prepare": "husky install",
     "check-types": "tsc --pretty --noEmit",
     "check-format": "npx prettier --check .",
