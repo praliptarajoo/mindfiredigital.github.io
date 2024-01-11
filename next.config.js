@@ -18,7 +18,7 @@ module.exports = (phase, { defaultConfig }) => {
         unoptimized: true,
       },
       output: "export",
-      distDir: "docs"
+      distDir: "build"
     };
   }
 
