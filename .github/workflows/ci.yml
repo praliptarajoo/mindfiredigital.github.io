@@ -44,8 +44,10 @@ jobs:
           shopt -u dotglob
           git checkout gh-pages
           rm -rf *
+          shopt -u dotglob
           cp -r /tmp/temp-directory/* .
-          git add . 
+          shopt -u dotglob
+          git add --all
           git commit -m "Copy build artifacts from main to gh-pages branch"
 
       - name: Push to gh-pages
