@@ -46,7 +46,9 @@ jobs:
           rm -rf *
           rm -rf .husky .next .nojekyll
           ls -al
+          shopt -s dotglob
           cp -r /tmp/temp-directory/* .
+          shopt -u dotglob
           git add . -f
           git commit -m "Copy build artifacts from main to gh-pages branch"
 
