@@ -28,6 +28,7 @@ jobs:
       - name: 'Build application'
         run: |
           npm run build
+          cd build
           ls
 
       - name: 'Fetch branches'
