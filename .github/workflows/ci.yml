@@ -30,7 +30,13 @@ jobs:
           npm run build
           touch ./build/.nojekyll
           cd build
-          ls
+          ls -al
+          if [ -f .nojekyll ]; then
+            echo ".nojekyll file exists in the build directory."
+          else
+            echo "ERROR: .nojekyll file not found in the build directory."
+            exit 1
+          fi
 
       - name: 'Fetch branches'
         run: git fetch origin
