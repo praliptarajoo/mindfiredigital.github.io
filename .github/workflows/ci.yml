@@ -39,7 +39,9 @@ jobs:
       - name: 'Copy build artifacts to gh-pages branch'
         run: |
           mkdir /tmp/temp-directory
+          shopt -s dotglob
           cp -r build/* /tmp/temp-directory/
+          shopt -u dotglob
           cd /tmp/temp-directory/ 
           ls -al
       #     git checkout gh-pages
