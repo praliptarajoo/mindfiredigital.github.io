@@ -28,7 +28,6 @@ jobs:
       - name: 'Build application'
         run: |
           npm run build
-          touch ./build/.nojekyll
           cd build
           ls -al
           if [ -f .nojekyll ]; then
