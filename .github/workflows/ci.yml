@@ -41,9 +41,10 @@ jobs:
           mkdir /tmp/temp-directory
           shopt -s dotglob
           cp -r build/* /tmp/temp-directory/
+          shopt -u dotglob
           git checkout gh-pages
           rm -rf *
-          shopt -u dotglob
+          rm -rf .husky .next .nojekyll
           ls -al
           cp -r /tmp/temp-directory/* .
           git add . -f
