@@ -33,7 +33,7 @@ jobs:
       
       - name: 'Set Git username and email'
         run: |
-          git config --local user.email "mailto:github-actions@github.com"
+          git config --local user.email "github-actions@github.com"
           git config --local user.name "GitHub Actions"
 
       - name: 'Copy build artifacts to gh-pages branch'
