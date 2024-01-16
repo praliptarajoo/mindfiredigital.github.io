@@ -31,7 +31,7 @@ jobs:
       - name: 'Fetch branches'
         run: git fetch origin
       
-      - name: 'Set Git user name and email'
+      - name: 'Set Git username and email'
         run: |
           git config --local user.email "mailto:github-actions@github.com"
           git config --local user.name "GitHub Actions"
