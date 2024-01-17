@@ -27,6 +27,11 @@ jobs:
 
       - name: 'Build application'
         run: npm run build
+      
+      - name: 'Restore changes in json'
+        run: |
+          git restore src/app/projects/assets/upcomingProjects.json
+          git restore src/app/projects/assets/projects.json
 
       - name: 'Fetch branches'
         run: git fetch origin
