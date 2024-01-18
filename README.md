@@ -92,3 +92,4 @@ bun start:build
 - [aryanxorian](https://github.com/aryanxorian)
 - [avishekthapamindfire0822](https://github.com/avishekthapamindfire0822)
 - [ArnabKMindfire](https://github.com/ArnabKMindfire)
+- [praliptarajoo](https://github.com/praliptarajoo)
