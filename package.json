@@ -14,7 +14,11 @@
     "format": "npx prettier --write .",
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
     "pre-commit": "npm run check-format && npm run check-lint && npm run check-types",
+<<<<<<< HEAD
     "update-projects": "node updateProject.js"
+=======
+    "update-projects": "node updateProject.mjs"
+>>>>>>> a6fa3afc0f4bfcebcaad8a7bd55fe461d4ae24d4
   },
   "dependencies": {
     "clsx": "^2.0.0",
