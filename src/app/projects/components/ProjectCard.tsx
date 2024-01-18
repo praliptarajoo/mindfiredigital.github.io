@@ -25,20 +25,26 @@ export default function ProjectCard({
       <p className='mt-3 text-mf-dark tracking-wide leading-10'>
         {shortDescription}
       </p>
-      {(githubUrl || documentationUrl) && (
-        <div className='flex gap-4 justify-end mt-6 pt-6 border-t-2'>
-          {githubUrl && githubUrl !== "NA" ? (
-            <Link href={githubUrl!} target='_blank'>
-              <Image src={github} height={20} width={20} alt='facebook_img' />
-            </Link>
-          ) : null}
-          {documentationUrl && documentationUrl !== "NA" ? (
-            <Link href={documentationUrl} target='_blank'>
-              <Image src={redirect} height={20} width={20} alt='facebook_img' />
-            </Link>
-          ) : null}
-        </div>
-      )}
+      {(githubUrl || documentationUrl) &&
+        (githubUrl !== "NA" || documentationUrl !== "NA") && (
+          <div className='flex gap-4 justify-end mt-6 pt-6 border-t-2'>
+            {githubUrl && githubUrl !== "NA" ? (
+              <Link href={githubUrl!} target='_blank'>
+                <Image src={github} height={20} width={20} alt='facebook_img' />
+              </Link>
+            ) : null}
+            {documentationUrl && documentationUrl !== "NA" ? (
+              <Link href={documentationUrl} target='_blank'>
+                <Image
+                  src={redirect}
+                  height={20}
+                  width={20}
+                  alt='facebook_img'
+                />
+              </Link>
+            ) : null}
+          </div>
+        )}
     </div>
   );
 }
