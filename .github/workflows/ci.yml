@@ -72,6 +72,9 @@ jobs:
     steps: 
       - name: Checkout code 
         uses: actions/checkout@v2
+
+      - name: Print all Variable
+        run: env
         
       - name: Create release notes
         id: create-new-release
@@ -80,7 +83,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.run_number }}
-          release_name: Release ${{ github.run_number }}
+          release_name: Version ${{ github.run_number }}
           body: |
             Changes in this Release
             - First Change
