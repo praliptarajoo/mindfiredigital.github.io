@@ -6,6 +6,7 @@ import Image from "next/image";
 
 interface Props {
   title: string;
+  parentTitle: string;
   shortDescription: string;
   githubUrl?: string;
   documentationUrl?: string;
@@ -16,6 +17,7 @@ export default function ProjectCard({
   shortDescription,
   githubUrl,
   documentationUrl,
+  parentTitle,
 }: Props) {
   return (
     <div className='border-2 p-8 transition-[box-shadow] shadow-none hover:shadow-xl bg-slate-50/70'>
@@ -25,7 +27,8 @@ export default function ProjectCard({
       <p className='mt-3 text-mf-dark tracking-wide leading-10'>
         {shortDescription}
       </p>
-      {(githubUrl || documentationUrl) &&
+      {parentTitle !== "Upcoming Projects" &&
+        (githubUrl || documentationUrl) &&
         (githubUrl !== "NA" || documentationUrl !== "NA") && (
           <div className='flex gap-4 justify-end mt-6 pt-6 border-t-2'>
             {githubUrl && githubUrl !== "NA" ? (
