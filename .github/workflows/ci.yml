@@ -72,6 +72,7 @@ jobs:
     steps: 
       - name: Checkout code 
         uses: actions/checkout@v2
+        
       - name: Create release notes
         id: create-new-release
         uses: actions/create-release@v1
@@ -80,6 +81,12 @@ jobs:
         with:
           tag_name: ${{ github.run_number }}
           release_name: Release ${{ github.run_number }}
+      
+      - name: Archive site content 
+        uses: thedoctor0/zip-release@0.7.5
+        with: 
+          filename: my-artifact.zip
+
       - name: Upload release assets
         uses: actions/upload-release-asset@v1
         env:
