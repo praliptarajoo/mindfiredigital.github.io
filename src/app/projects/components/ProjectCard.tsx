@@ -27,16 +27,16 @@ export default function ProjectCard({
       </p>
       {(githubUrl || documentationUrl) && (
         <div className='flex gap-4 justify-end mt-6 pt-6 border-t-2'>
-          {githubUrl && (
+          {githubUrl && githubUrl !== "NA" ? (
             <Link href={githubUrl!} target='_blank'>
               <Image src={github} height={20} width={20} alt='facebook_img' />
             </Link>
-          )}
-          {documentationUrl && (
-            <Link href={documentationUrl ?? ""} target='_blank'>
+          ) : null}
+          {documentationUrl && documentationUrl !== "NA" ? (
+            <Link href={documentationUrl} target='_blank'>
               <Image src={redirect} height={20} width={20} alt='facebook_img' />
             </Link>
-          )}
+          ) : null}
         </div>
       )}
     </div>
