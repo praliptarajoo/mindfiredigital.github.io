@@ -106,6 +106,6 @@ jobs:
           asset_content_type: application/zip
       
       - name: Semantic Release
-        run: npx semantic-release
+        run: npx semantic-release@22.0.0
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
