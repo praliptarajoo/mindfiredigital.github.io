@@ -27,7 +27,7 @@ export default function Home() {
           href='/projects'
           className='text-white bg-mf-red font-medium text-base rounded-full px-6 py-3 text-center tracking-wide'
         >
-          Explore Projects
+          Explore Projects - checking
         </Link>
       </div>
       <Image
