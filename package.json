@@ -55,5 +55,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/praliptarajoo/mindfiredigital.github.io.git"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   }
 }
