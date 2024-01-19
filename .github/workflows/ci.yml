@@ -67,7 +67,7 @@ jobs:
         run: |
           git checkout main
   create-github-release:
-    name: Create Github semantic release
+    name: Create Github release document
     runs-on: ubuntu-latest
     needs: build
     steps: 
