@@ -9,7 +9,7 @@ export default function Home() {
     <div className='flex flex-col-reverse items-center lg:flex-row justify-between px-6 pr-12 py-12'>
       <div className='max-w-2xl mt-7'>
         <div className='text-mf-dark font-bold text-3xl tracking-wider leading-10'>
-          Igniting Innovation through Open Source Collaboration: Mindfire |{" "}
+          Igniting innovation through Open Source Collaboration: Mindfire |{" "}
           <TypeAnimationWrapper
             sequence={[
               "FOSS", // initially rendered starting point
