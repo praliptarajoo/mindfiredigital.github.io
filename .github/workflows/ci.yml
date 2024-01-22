@@ -64,7 +64,7 @@ jobs:
 
       - name: 'Switch back to main branch'
         run: |
-          git checkout main 
+          git checkout main
   create-github-release:
     name: Create Github release document
     runs-on: ubuntu-latest
