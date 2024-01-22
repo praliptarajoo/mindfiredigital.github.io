@@ -49,5 +49,10 @@
     "serve": "^14.2.1",
     "tailwindcss": "^3",
     "typescript": "^5"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   }
 }
