@@ -51,6 +51,7 @@
     "typescript": "^5"
   },
   "release": {
+    "repositoryUrl": "https://github.com/praliptarajoo/mindfiredigital.github.io.git",
     "branches": [
       "main"
     ]
