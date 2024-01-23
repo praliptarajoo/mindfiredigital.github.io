@@ -32,6 +32,7 @@ jobs:
         run: |
           git restore src/app/projects/assets/upcomingProjects.json
           git restore src/app/projects/assets/projects.json
+          git restore package-lock.json
 
       - name: 'Fetch branches'
         run: git fetch origin
