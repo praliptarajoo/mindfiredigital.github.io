@@ -29,7 +29,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test --if-present
-    - run: npx semantic-release@22.0.0
+    - run: npm run semantic-release@22.0.0
       env:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
