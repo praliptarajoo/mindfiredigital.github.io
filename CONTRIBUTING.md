@@ -22,6 +22,36 @@ Here are some ways you can contribute to the project:
 6. **Push** your branch to your GitHub repository: `git push origin feature-name`.
 7. Create a **Pull Request (PR)** from your branch to the original repository's `main` or `master` branch.
 
+## Commit Message Format
+
+We follow the conventional commit message format using Commitlint to ensure consistent and meaningful commit messages. This format helps in automated versioning and release notes generation.
+
+### Commit Types
+
+- **feat:** A new feature for the user or a significant change.
+- **fix:** A bug fix for the user or a significant issue resolution.
+- **docs:** Documentation changes.
+- **chore:** Routine tasks, maintenance, or tooling changes.
+
+### How to Write Commit Messages
+
+- Start the commit message with the type, followed by a colon and a space (e.g., `feat: Add new feature`).
+- Provide a concise and descriptive commit message.
+- If the commit addresses an issue, include the issue number in the message (e.g., `fix: Resolve #123`).
+
+### Example Commit Messages
+
+- feat: Implement user authentication
+- fix: Resolve issue #456 with data validation
+- docs: Update installation instructions
+- chore: Upgrade dependencies to latest versions
+
+### Commitlint Configuration
+
+We use Commitlint to enforce the commit message format. Ensure that your commits adhere to the specified format. You can find the Commitlint configuration in the repository.
+
+For more details on Commitlint and conventional commits, please refer to [Commitlint Documentation](https://commitlint.js.org/).
+
 ## Pull Request Guidelines
 
 - Make sure your PR addresses an issue or feature request.
