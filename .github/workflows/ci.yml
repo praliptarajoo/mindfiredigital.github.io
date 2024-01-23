@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Run commitlint check
-        run: npx commitlint --from=${{ github.event.before }} --to=${{ github.sha }}
+        run: npx commitlint --edit
   # build:
   #   name: 'Build Mindfire FOSS application'
   #   runs-on: ubuntu-latest
