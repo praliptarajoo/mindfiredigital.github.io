@@ -15,7 +15,7 @@
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
     "pre-commit": "npm run check-format && npm run check-lint && npm run check-types",
     "update-projects": "node updateProject.mjs",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release --branches main"
   },
   "dependencies": {
     "clsx": "^2.0.0",
