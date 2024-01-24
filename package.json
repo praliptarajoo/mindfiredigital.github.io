@@ -1,7 +1,7 @@
 {
   "name": "mf-open-source",
   "version": "0.0.0-development",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "npm run update-projects && next build && touch ./build/.nojekyll",
