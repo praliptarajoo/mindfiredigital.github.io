@@ -75,10 +75,16 @@ jobs:
     steps: 
       - name: Checkout code 
         uses: actions/checkout@v2
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
 
       - name: Semantic Release and npm release
+        run: npm ci
         run: npx semantic-release@22.0.0
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
