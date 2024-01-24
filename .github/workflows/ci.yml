@@ -67,7 +67,7 @@ jobs:
         run: |
           git checkout main
   create-github-release:
-    name: Create Github release document
+    name: Create Github release document and publish to node
     runs-on: ubuntu-latest
     permissions:
       contents: write
