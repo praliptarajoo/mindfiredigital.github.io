@@ -60,6 +60,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/praliptarajoo/mindfiredigital.github.io.git"
+    "url": "git+https://github.com/praliptarajoo/mindfiredigital.github.io.git"
   }
 }
