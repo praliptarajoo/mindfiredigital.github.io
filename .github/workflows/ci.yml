@@ -83,6 +83,7 @@ jobs:
 
       - name: Semantic Release and npm release
         run: |
+          echo "${{ secrets.GITHUB_TOKEN }}"
           npm ci
           npx semantic-release@22.0.0
         env:
