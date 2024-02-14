@@ -21,6 +21,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 'Install dependencies'
         run: npm install
@@ -32,6 +34,7 @@ jobs:
         run: |
           git restore src/app/projects/assets/upcomingProjects.json
           git restore src/app/projects/assets/projects.json
+          git restore src/app/projects/assets/contributors.json
 
       - name: 'Fetch branches'
         run: git fetch origin
