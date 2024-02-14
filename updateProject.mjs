@@ -126,6 +126,7 @@ async function getUpcomingProjects() {
 async function getContributorsList() {
   const githubApiUrl = "https://api.github.com/users/mindfiredigital/repos";
   const githubToken = process.env.GITHUB_TOKEN;
+  console.log("my github token", githubToken);
 
   try {
     const github_response = await fetch(githubApiUrl, {
@@ -199,6 +200,7 @@ async function getContributorsList() {
       projectsJsonPath,
       JSON.stringify(sortedContributions, null, 2)
     );
+    console.log("Contributors list updated successfully.");
   } catch (error) {
     console.log(error);
   }
