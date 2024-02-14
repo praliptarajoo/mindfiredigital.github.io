@@ -200,6 +200,7 @@ async function getContributorsList() {
       projectsJsonPath,
       JSON.stringify(sortedContributions, null, 2)
     );
+    console.log("Contributors list updated successfully.");
   } catch (error) {
     console.log(error);
   }
