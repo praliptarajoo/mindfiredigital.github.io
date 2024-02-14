@@ -122,5 +122,88 @@ async function getUpcomingProjects() {
   }
 }
 
+//get list of contributors from github repo
+async function getContributorsList() {
+  const githubApiUrl = "https://api.github.com/users/mindfiredigital/repos";
+  const githubToken = process.env.GITHUB_TOKEN;
+
+  try {
+    const github_response = await fetch(githubApiUrl, {
+      method: "GET",
+      headers: {
+        Authorization: `token ${githubToken}`,
+        Accept: "application/vnd.github.v3+json",
+      },
+    });
+
+    if (!github_response.ok) {
+      throw new Error(
+        `Failed to fetch repositories. Status: ${github_response.status}`
+      );
+    }
+    const repositories = await github_response.json();
+    const repoNames = repositories.map((repo) => repo.name);
+
+    const contributorsObject = {};
+    for (const repoName of repoNames) {
+      const repoContributorsUrl = `https://api.github.com/repos/mindfiredigital/${repoName}/contributors`;
+
+      const contributorsResponse = await fetch(repoContributorsUrl, {
+        method: "GET",
+        headers: {
+          Authorization: `token ${githubToken}`,
+          Accept: "application/vnd.github.v3+json",
+        },
+      });
+
+      if (!contributorsResponse.ok) {
+        console.error(
+          `Failed to fetch contributors for ${repoName}. Status: ${contributorsResponse.status}`
+        );
+        continue;
+      }
+
+      const contributors = await contributorsResponse.json();
+      contributorsObject[repoName] = contributors;
+    }
+    let contributionsMap = {};
+
+    for (let repo in contributorsObject) {
+      contributorsObject[repo].forEach((contributor) => {
+        const { login, contributions, id, avatar_url, html_url } = contributor;
+        if (contributionsMap.hasOwnProperty(login)) {
+          contributionsMap[login].contributions += contributions;
+        } else {
+          contributionsMap[login] = {
+            id,
+            contributions,
+            html_url,
+            avatar_url,
+            login,
+          };
+        }
+      });
+    }
+    let sortedContributions = Object.fromEntries(
+      Object.entries(contributionsMap).sort(
+        ([, a], [, b]) => b.contributions - a.contributions
+      )
+    );
+
+    const projectsJsonPath = path.join(
+      __dirname,
+      "src/app/projects/assets/contributors.json"
+    );
+
+    fs.writeFileSync(
+      projectsJsonPath,
+      JSON.stringify(sortedContributions, null, 2)
+    );
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 getCurrentProjects();
 getUpcomingProjects();
+getContributorsList();
