@@ -45,9 +45,7 @@ async function getCollaborators(repoData, githubToken) {
 
 // Main function to update projects data
 async function updateProjects() {
-  // const githubToken = process.env.GITHUB_TOKEN;
-  const githubToken =
-    "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";
+  const githubToken = process.env.GITHUB_TOKEN;
 
   try {
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
