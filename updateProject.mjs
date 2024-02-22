@@ -154,18 +154,27 @@ async function updateProjects() {
 
     // Aggregate contributor from contributors
     const contributionsMap = {};
+
     for (const repo in contributorsObject) {
-      contributorsObject[repo].forEach((contributor) => {
-        const { login, contributions, id, avatar_url, html_url } = contributor;
-        contributionsMap[login] = contributionsMap[login] || {
-          id,
-          contributions: 0,
-          html_url,
-          avatar_url,
-          login,
-        };
-        contributionsMap[login].contributions += contributions;
-      });
+      if (contributorsObject.hasOwnProperty(repo)) {
+        contributorsObject[repo].forEach((contributor) => {
+          if (contributor.login === "github-actions[bot]") {
+            // Skip processing GitHub Actions bot contributions
+            return;
+          }
+          const { login, contributions, id, avatar_url, html_url } =
+            contributor;
+          // Update contributions map
+          contributionsMap[login] = {
+            id,
+            contributions:
+              (contributionsMap[login]?.contributions || 0) + contributions,
+            html_url,
+            avatar_url,
+            login,
+          };
+        });
+      }
     }
 
     // Sort contributions and write data to file
