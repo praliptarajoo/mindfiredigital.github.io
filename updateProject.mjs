@@ -124,9 +124,10 @@ async function getUpcomingProjects() {
 
 //get list of contributors from github repo
 async function getContributorsList() {
-  const githubApiUrl = "https://api.github.com/users/mindfiredigital/repos";
-  const githubToken = process.env.GITHUB_TOKEN;
-  console.log("my github token", githubToken);
+  const githubApiUrl = "https://api.github.com/users/praliptarajoo/repos";
+  const githubToken =
+    "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";
+  // process.env.GITHUB_TOKEN;
 
   try {
     const github_response = await fetch(githubApiUrl, {
@@ -144,10 +145,13 @@ async function getContributorsList() {
     }
     const repositories = await github_response.json();
     const repoNames = repositories.map((repo) => repo.name);
+    // const repoNames = repositories
+    //   .filter((repo) => !repo.fork)
+    //   .map((repo) => repo.name);
 
     const contributorsObject = {};
     for (const repoName of repoNames) {
-      const repoContributorsUrl = `https://api.github.com/repos/mindfiredigital/${repoName}/contributors`;
+      const repoContributorsUrl = `https://api.github.com/repos/praliptarajoo/${repoName}/contributors`;
 
       const contributorsResponse = await fetch(repoContributorsUrl, {
         method: "GET",
@@ -165,7 +169,10 @@ async function getContributorsList() {
       }
 
       const contributors = await contributorsResponse.json();
-      contributorsObject[repoName] = contributors;
+      const userContributors = contributors.filter(
+        (contributor) => contributor.type === "User"
+      );
+      contributorsObject[repoName] = userContributors;
     }
     let contributionsMap = {};
 
@@ -206,6 +213,6 @@ async function getContributorsList() {
   }
 }
 
-getCurrentProjects();
-getUpcomingProjects();
+// getCurrentProjects();
+// getUpcomingProjects();
 getContributorsList();
